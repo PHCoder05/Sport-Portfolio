@@ -1,13 +1,15 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us Section</title>
+    <title>Contact Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles/styles.css">
     <style>
-        /* General Section Styling */
-        .about-us-section {
+      .about-us-section {
             background-color: #f7f9fc;
             padding: 50px 20px;
             border-radius: 15px;
@@ -15,6 +17,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             margin: 20px auto;
             max-width: 1200px;
+            position: relative;
         }
 
         .about-us-title {
@@ -48,6 +51,7 @@
             display: flex;
             justify-content: center;
             margin-top: 40px;
+            flex-wrap: wrap;
         }
 
         .about-icon {
@@ -81,10 +85,6 @@
                 font-size: 16px;
             }
 
-            .about-us-icons {
-                flex-wrap: wrap;
-            }
-
             .about-icon {
                 width: 100px;
                 height: 100px;
@@ -92,49 +92,91 @@
                 font-size: 32px;
             }
         }
-
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <nav class="navbar">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.svg" alt="Capriole logo">
+                <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            
+            <div class="nav-desktop">
+                <a href="app.html">Download App</a>
+                <a href="about-us.html">About us</a>
+                <a href="contact-us.html">Contact us</a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                <span></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="app.html">Download App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
-                    </li>
-                </ul>
+        </nav>
+        <div class="nav-container" id="navContainer">
+            <div class="nav-items">
+                <a href="app.html">Download App</a>
+                <a href="about-us.html">About us</a>
+                <a href="contact-us.html">Contact us</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </nav>
+    
+        <section>
+            <div class="about-us-section">
+                <div class="about-us-title">About Us</div>
+                <div class="about-us-content">
+                    We are a passionate team dedicated to providing top-notch services in sports management and training. Our mission is to empower athletes, organizations, and sports enthusiasts by offering innovative solutions, personalized training programs, and unparalleled support to help them achieve their full potential. We strive to create a community where sportsmanship, excellence, and collaboration are at the forefront of everything we do.
+                </div>
+                <div class="about-us-icons">
+                    <div class="about-icon">⚽</div>
+                    <div class="about-icon">🏆</div>
+                    <div class="about-icon">🤝</div>
+                    <div class="about-icon">🌍</div>
+                </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/capriolelogo2.png" alt="CAPRIOLE Logo" class="footer-logo">
+                    <h5>UNLEASHING SPORTING<br>DREAM <br> FOR ALL</h5>
+                    <img src="assets/images/Badmintonillustration.png" alt="Dotted athlete silhouette" class="dotted-image">
+                   
+                </div>
+                <div class="col-md-4">
+                    <h3>APP DOWNLOAD</h3>
+                    <ul>
+                        <li><a href="#">User App Download</a></li>
+                        <li><a href="#">Admin App Download</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>QUICK LINKS</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Download App</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <h3>FOLLOW OUR SOCIALS</h3>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
-<!-- About Us Section -->
-<div class="about-us-section">
-    <div class="about-us-title">About Us</div>
-    <div class="about-us-content">
-        We are a passionate team dedicated to providing top-notch services in sports management and training. Our mission is to empower athletes, organizations, and sports enthusiasts by offering innovative solutions, personalized training programs, and unparalleled support to help them achieve their full potential. We strive to create a community where sportsmanship, excellence, and collaboration are at the forefront of everything we do.
-    </div>
-
-    <!-- Icons representing services or values -->
-    <div class="about-us-icons">
-        <div class="about-icon">⚽</div>
-        <div class="about-icon">🏆</div>
-        <div class="about-icon">🤝</div>
-        <div class="about-icon">🌍</div>
-    </div>
-</div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

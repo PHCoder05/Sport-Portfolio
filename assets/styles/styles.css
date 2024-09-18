@@ -727,7 +727,7 @@ text-align: left;
   .star {
     font-size: 18px;
   }
-}*/
+}
 /* 
 /* Contact Section *//*
 .contact-section {
@@ -839,7 +839,6 @@ text-align: left;
   color: var(--primary-color);
 }
 */
-/* Responsive Design *//*
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -888,7 +887,7 @@ text-align: left;
   .contact-description {
     font-size: calc(var(--font-small) * 0.9);
   }
-} */
+} 
 /* Actual Contact Section */
 
 
@@ -910,7 +909,7 @@ text-align: left;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
   margin: 0 auto;                /* Center container horizontally */
 }
 
