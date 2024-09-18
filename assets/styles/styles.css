@@ -34,12 +34,14 @@ body, html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   height: 100%;
   background-color: #f0f4f8;
+  
 }
 
 body {
   /* line-height: 1.6; */
   background-color: var(--background-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -430,42 +432,47 @@ body {
 .section {
   padding: 50px 0;
 }
-
 /* Responsive Container */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Fixed maximum width */
+  height: 100vh; /* Full viewport height */
   margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  /* overflow-x: hidden; */
+
 }
 
 /* Responsive Media Queries */
 @media (max-width: 1200px) {
   .container {
-    max-width: 1000px;
+    max-width: 1000px; /* Adjust the maximum width for smaller screens */
   }
 }
 
 @media (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 750px; /* Further adjust the maximum width for medium screens */
+    padding: 0 15px; /* Adjust padding for medium screens */
   }
 
   .section {
-    padding: 40px 0;
+    padding: 40px 0; /* Adjust section padding for medium screens */
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
-    padding: 0 15px;
+    max-width: 100%; /* Full width for smaller screens */
+    padding: 0 10px; /* Adjust padding for smaller screens */
   }
 
   .section {
-    padding: 30px 0;
+    padding: 30px 0; /* Adjust section padding for smaller screens */
   }
 }
+
 
 .section-title {
   font-weight: bold;
