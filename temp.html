@@ -1,325 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capriole - Begin Your Journey</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --text-color: #333;
-            --background-color: #f4f4f4;
-        }
+<html>
+ <head>
+  <title>Capriole</title>
+  <style>
+   body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+   }
+   .container {
+     width: 80%;
+     margin: 0 auto;
+     text-align: center;
+   }
+   .header-about {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+     text-align: left;
+   }
+   .header-about h1 {
+     font-size: 2.5vw; /* Responsive font size for heading */
+     margin: 0;
+     flex: 1;
+     text-align: left;
+   }
+   .header-about p {
+     font-size: 1.2vw; /* Responsive font size for paragraph */
+     color: #666;
+     flex: 1;
+     margin-left: 10px;
+     text-align: right;
+     max-width: 400px;
+     line-height: 1.5;
+   }
+   .banner-about {
+     position: relative;
+     width: 100%;
+     height: 30vh; /* Responsive height based on viewport */
+     background: url('assets/images/Basketball.png') no-repeat center center;
+     background-size: cover;
+   }
+   .banner-about img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+   }
+   .banner-about .logo-about {
+     position: absolute;
+     bottom: 20px;
+     left: 20px;
+     font-size: 2.5vw; /* Responsive logo size */
+     color: white;
+     font-weight: bold;
+   }
+   .vision-about {
+     padding: 40px 0;
+   }
+   .vision-about h2 {
+     font-size: 3vw; /* Responsive font size for vision heading */
+     color: #007BFF;
+     margin: 0;
+   }
+   .vision-about p {
+     font-size: 1.5vw; /* Responsive font size for vision paragraph */
+     color: #333;
+     margin: 20px 0 0;
+     line-height: 1.6;
+   }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            height: 100%;
-            background-color: var(--background-color);
-        }
+   /* Media query for larger screens */
+   @media (min-width: 1200px) {
+     .header-about h1 {
+       font-size: 2rem; /* Fixed font size for large screens */
+     }
+     .header-about p {
+       font-size: 1rem;
+     }
+     .vision-about h2 {
+       font-size: 2.5rem;
+     }
+     .vision-about p {
+       font-size: 1.2rem;
+     }
+   }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 25px;
-            background-color: #ffffff;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1001;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
+   /* Media query for smaller screens (tablets and mobile) */
+   @media (max-width: 1024px) {
+     .header-about {
+       flex-direction: column;
+       text-align: center;
+     }
+     .header-about h1, .header-about p {
+       text-align: center;
+     }
+     .header-about p {
+       margin-left: 0;
+     }
+     .vision-about h2 {
+       font-size: 5vw;
+     }
+     .vision-about p {
+       font-size: 3vw;
+     }
+   }
 
-        .navbar-brand {
-            font-size: 28px;
-            font-weight: bold;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .nav-desktop {
-            display: none;
-        }
-
-        .nav-desktop a {
-            margin: 0 20px;
-            text-decoration: none;
-            color: var(--text-color);
-            font-size: 18px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-desktop a:hover {
-            color: var(--primary-color);
-        }
-
-        .menu-toggle {
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 30px;
-            height: 30px;
-            position: relative;
-            z-index: 1002;
-        }
-
-        .menu-toggle span,
-        .menu-toggle span::before,
-        .menu-toggle span::after {
-            content: '';
-            display: block;
-            background: var(--text-color);
-            height: 2px;
-            width: 30px;
-            transition: all 0.3s ease-in-out;
-            position: absolute;
-        }
-
-        .menu-toggle span::before {
-            transform: translateY(-10px);
-        }
-
-        .menu-toggle span::after {
-            transform: translateY(10px);
-        }
-
-        .menu-toggle.open span {
-            background: transparent;
-        }
-
-        .menu-toggle.open span::before {
-            transform: rotate(45deg);
-        }
-
-        .menu-toggle.open span::after {
-            transform: rotate(-45deg);
-        }
-
-        .nav-container {
-            position: fixed;
-            top: 0;
-            right: -300px;
-            width: 300px;
-            height: 100%;
-            background-color: #ffffff;
-            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-            z-index: 1000;
-        }
-
-        .nav-container.open {
-            right: 0;
-        }
-
-        .nav-items {
-            padding: 80px 40px 0;
-        }
-
-        .nav-items a {
-            display: block;
-            padding: 20px 0;
-            text-decoration: none;
-            color: var(--text-color);
-            border-bottom: 1px solid #eee;
-            font-size: 20px;
-            transition: color 0.3s ease;
-        }
-
-        .nav-items a:hover {
-            color: var(--primary-color);
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            padding-bottom: 40px;
-        }
-
-        .social-icons a {
-            margin: 0 15px;
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 24px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: var(--primary-color);
-        }
-
-        .journey-section {
-            background-image: url("../images/FirstPageillustration1.svg");
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding-top: 60px;
-        }
-
-        .journey-title {
-            font-size: 5rem;
-            font-weight: bold;
-            line-height: 1.2;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .journey-title .begin-your {
-            color: #ffffff;
-        }
-
-        .journey-title .journey {
-            color: transparent;
-            -webkit-text-stroke: 2px #ffffff;
-        }
-
-        .explore-btn {
-            background-color: var(--primary-color);
-            color: #ffffff;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 30px;
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-        }
-
-        .explore-btn:hover {
-            background-color: #2980b9;
-            transform: translateY(-3px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        @media (min-width: 769px) {
-            .menu-toggle {
-                display: none;
-            }
-
-            .nav-desktop {
-                display: flex;
-            }
-
-            .nav-container {
-                display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .journey-title {
-                font-size: 3rem;
-            }
-
-            .journey-section {
-                padding-top: 80px;
-            }
-
-            .nav-container {
-                width: 100%;
-                right: -100%;
-            }
-
-            .nav-items {
-                padding: 60px 30px 0;
-            }
-
-            .nav-items a {
-                font-size: 18px;
-                padding: 15px 0;
-            }
-
-            .social-icons {
-                padding-bottom: 30px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <a class="navbar-brand" href="#">Capriole</a>
-
-        <div class="nav-desktop">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-            <span></span>
-        </button>
-    </nav>
-
-    <div class="nav-container" id="navContainer">
-        <div class="nav-items">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="social-icons">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-    </div>
-
-    <section class="journey-section">
-        <div>
-            <h1 class="journey-title">
-                <span class="begin-your">BEGIN YOUR</span><br>
-                <span class="journey">JOURNEY</span>
-            </h1>
-            <button class="explore-btn">Explore</button>
-        </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const navContainer = document.getElementById('navContainer');
-
-        function toggleMenu() {
-            navContainer.classList.toggle('open');
-            menuToggle.classList.toggle('open');
-            document.body.style.overflow = navContainer.classList.contains('open') ? 'hidden' : '';
-        }
-
-        menuToggle.addEventListener('click', toggleMenu);
-
-        document.addEventListener('click', function(event) {
-            if (!navContainer.contains(event.target) && event.target !== menuToggle && !menuToggle.contains(event.target)) {
-                navContainer.classList.remove('open');
-                menuToggle.classList.remove('open');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Add smooth scrolling to all links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
+   /* Media query for extra small devices (mobile phones) */
+   @media (max-width: 600px) {
+     .header-about h1 {
+       font-size: 5vw;
+     }
+     .header-about p {
+       font-size: 3vw;
+     }
+     .vision-about h2 {
+       font-size: 6vw;
+     }
+     .vision-about p {
+       font-size: 3.5vw;
+     }
+     .banner-about {
+       height: 25vh; /* Adjust banner height for small screens */
+     }
+     .banner-about .logo-about {
+       font-size: 4vw;
+     }
+   }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header-about">
+    <h1>We Build Bridges Between Athletes and Sport </h1>
+    <p>Welcome to Capriole, your ultimate destination for sports enthusiasts seeking convenient solutions
+        for sports venue booking and academy management.</p>
+   </div>
+   <div class="banner-about">
+    <img alt="About Capriole" height="300" src="assets/images/Basketball.png" width="800"/>
+    <div class="logo-about">ABOUT CAPRIOLE</div>
+   </div>
+   <div class="vision-about">
+    <h2>Our Mission</h2>
+    <p>Capriole is committed to bridging the gap between athletes and the best sports venues. We provide a seamless experience for booking venues and managing sports academies with ease and efficiency.</p>
+   </div>
+  </div>
+ </body>
 </html>

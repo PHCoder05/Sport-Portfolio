@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us Today - Capriole</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Join Us Section */
+        .join-us-section {
+            padding: 50px 20px;
+            background-color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .join-us-section h2 {
+            font-size: 50px;  /* Adjusted to match your image */
+            color: #007bff;   /* Blue color for "JOIN US" */
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .join-us-section h2 span {
+            color: #55a9e3;   /* Light blue color for "TODAY" */
+            font-weight: 400;
+        }
+
+        .join-us-section p {
+            font-size: 18px;   /* Font size based on the screenshot */
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            line-height: 1.7;
+        }
+
+        /* Background Image Placeholder */
+        .join-us-section::before {
+            content: "";
+            background: url('https://yourimagepath.com/abstract-image.png') no-repeat center;
+            background-size: contain;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .join-us-section h2 {
+                font-size: 35px;
+            }
+
+            .join-us-section p {
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .join-us-section h2 {
+                font-size: 28px;
+            }
+
+            .join-us-section p {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Join Us Today Section -->
+    <div class="join-us-section">
+        <h2>JOIN US <span>TODAY</span></h2>
+        <p>Whether you are an athlete looking for the perfect venue or a coach striving to streamline your academy's operations, Capriole is here to support your sports journey. Together, let us elevate the world of sports and create a vibrant community of sports lovers.</p>
+        <p>Join us today and experience the future of sports venue booking and academy management. Let us play, train, and succeed together!</p>
+    </div>
+
+</body>
+</html>

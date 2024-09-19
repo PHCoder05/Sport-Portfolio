@@ -3,46 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capriole App Download</title>
+    <title>Capriole App</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="assets/styles/styles.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-        }
-        .app-section {
-            padding: 50px 0;
-        }
-        .app-container {
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .app-title {
-            color: #0099cc;
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .app-description {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .store-badges img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        .phone-mockup {
-            max-width: 100%;
-            height: auto;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styling for App Sections */
+.app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.app-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+/* Adjust margin-right for User App section */
+.app-section:first-of-type .app-image img {
+    margin-right: 40px;
+}
+
+.app-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    max-width: 350px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.app-title {
+    color: #0099cc;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.app-title img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.app-subtitle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #0099cc;
+}
+
+.app-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.store-badges {
+    display: flex;
+    flex-direction: column;
+}
+
+.store-badges a {
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.store-badges a:hover {
+    background-color: #333;
+}
+
+.store-badges i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 1200px) {
+    .app-container {
+        width: 90vw;
+        padding: 30px;
+    }
+
+    .app-image img {
+        max-width: 250px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .app-details {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .app-title, .app-subtitle {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .app-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .app-image img {
+        margin: 0 0 30px 0;
+    }
+
+    .app-details {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .app-title {
+        justify-content: center;
+    }
+
+    .store-badges {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .store-badges a {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        width: 95vw;
+        padding: 20px;
+    }
+
+    .app-title, .app-subtitle {
+        font-size: 36px;
+    }
+
+    .app-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .app-title, .app-subtitle {
+        font-size: 30px;
+    }
+
+    .app-image img {
+        max-width: 200px;
+    }
+
+    .store-badges {
+        flex-direction: column;
+    }
+
+    .store-badges a {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
     </style>
 </head>
-<body>  <header>
+<body>
+
     <nav class="navbar">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
@@ -57,6 +218,7 @@
             <span></span>
         </button>
     </nav>
+    
     <div class="nav-container" id="navContainer">
         <div class="nav-items">
             <a href="app.html">Download App</a>
@@ -69,42 +231,50 @@
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </div>
-</header>
-<section class="app-section">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-md-6 mb-4">
-                <div class="app-container text-center">
-                    <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App" class="phone-mockup">
-                    <h2 class="app-title">
-                        Capriole User App
-                        <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Logo" style="width: 30px; height: 30px;">
-                    </h2>
-                    <p class="app-description">Download Our App and make playing Easier</p>
-                    <div class="store-badges">
-                        <a href="#" class="btn btn-primary me-2"><i class="fab fa-google-play me-1"></i>Google Play</a>
-                        <a href="#" class="btn btn-primary"><i class="fab fa-apple me-1"></i>App Store</a>
-                    </div>
-                </div>
+
+    <!-- First App Section (User App) -->
+    <section class="app-section">
+        <div class="app-container">
+            <div class="app-image">
+                <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App">
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="app-container text-center">
-                    <h2 class="app-title">
-                        Capriole Admin App
-                        <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole Logo" style="width: 30px; height: 30px;">
-                    </h2>
-                    <p class="app-description">Download Our App and Connect With Athletes Easily</p>
-                    <div class="store-badges">
-                        <a href="#" class="btn btn-primary me-2"><i class="fab fa-google-play me-1"></i>Google Play</a>
-                        <a href="#" class="btn btn-primary"><i class="fab fa-apple me-1"></i>App Store</a>
-                    </div>
-                    <img src="assets\images\CaprioleIphoneMockup2.png" alt="Capriole Admin App" class="phone-mockup mt-3">
+            <div class="app-details">
+                <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
+                <p class="app-subtitle">User App</p>
+                <p class="app-description">
+                    Download Our App <br>
+                    and make playing <br>
+                    Easier
+                </p>
+                <div class="store-badges">
+                    <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                    <a href="#"><i class="fab fa-apple"></i> App Store</a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <!-- Second App Section (Admin App) -->
+    <section class="app-section">
+        <div class="app-container">
+            <div class="app-details">
+                <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
+                <p class="app-subtitle">Admin App</p>
+                <p class="app-description">
+                    Download Our App <br>
+                    and Connect With <br>
+                    Athletes Easily
+                </p>
+                <div class="store-badges">
+                    <a href="#"><i class="fab fa-google-play"></i> Google Play</a>
+                    <a href="#"><i class="fab fa-apple"></i> App Store</a>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Admin App">
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -113,7 +283,6 @@
                     <img src="assets/images/capriolelogo2.png" alt="CAPRIOLE Logo" class="footer-logo">
                     <h5>UNLEASHING SPORTING<br>DREAM <br> FOR ALL</h5>
                     <img src="assets/images/Badmintonillustration.png" alt="Dotted athlete silhouette" class="dotted-image">
-                   
                 </div>
                 <div class="col-md-4">
                     <h3>APP DOWNLOAD</h3>
@@ -140,13 +309,7 @@
             </div>
         </div>
     </footer>
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/nav.js"></script>
 </body>
 </html>
