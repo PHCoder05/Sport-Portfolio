@@ -17,3 +17,8 @@ document.addEventListener('click', function(event) {
         document.body.style.overflow = '';
     }
 });
+
+// // prevent right clicks 
+// document.addEventListener('contextmenu', function(event) {
+//     event.preventDefault();
+//   });
