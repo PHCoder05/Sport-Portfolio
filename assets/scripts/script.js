@@ -18,7 +18,7 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// prevent right clicks 
-document.addEventListener('contextmenu', function(event) {
-    event.preventDefault();
-  });
+// // prevent right clicks 
+// document.addEventListener('contextmenu', function(event) {
+//     event.preventDefault();
+//   });
