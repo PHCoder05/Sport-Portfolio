@@ -10,6 +10,280 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
      <link rel="stylesheet" href="assets/styles/styles.css">
+     <style>
+        
+/* Main container with 20% margin */
+.main-container {
+  width: 60%; /* Reduced width since image area is removed */
+  margin: 1px 20%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Text area styling */
+.text-area {
+  text-align: center;
+}
+
+
+.service-feature h2 {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.service-feature p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .main-container {
+    width: 90%; /* Increase width for mobile */
+    margin: 10%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .service-feature h2 {
+    font-size: 1.25rem;
+  }
+
+  .service-feature p {
+    font-size: 0.9rem;
+  }
+}
+
+/* intro section */
+.intro-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.vision-who-section {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 30px;
+}
+
+.vision-box, .who-box {
+    width: 48%;
+}
+
+.vision-box h2, .who-box h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.vision-box h2 span, .who-box h2 span {
+    font-weight: normal;
+    color: #333;
+}
+
+.vision-box p, .who-box p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vision-who-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .vision-box, .who-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+.testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        h1 {
+            color: #0088cc;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .testimonial {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            height: 250px;
+            overflow: hidden;
+        }
+        .testimonial h3 {
+            color: #333;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        .testimonial p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .author {
+            font-weight: bold;
+            text-align: right;
+            color: #0088cc;
+        }
+        .slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #0088cc;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            cursor: pointer;
+        }
+        .slick-prev {
+            left: -50px;
+        }
+        .slick-next {
+            right: -50px;
+        }
+        .slick-arrow:before {
+            content: '';
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 5px;
+        }
+        .slick-prev:before {
+            transform: rotate(135deg);
+            margin-left: 5px;
+        }
+        .slick-next:before {
+            transform: rotate(-45deg);
+            margin-right: 5px;
+        }
+        .slick-dots {
+            bottom: -40px;
+        }
+        .slick-dots li button:before {
+            font-size: 12px;
+            color: #0088cc;
+        }
+
+        /*  */
+        .testimonial-section {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            overflow: hidden;
+        }
+        .testimonial-title {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 0 10px 20px;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .testimonial-quote {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .testimonial-content {
+            color: #6c757d;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .testimonial-author {
+            text-align: left;
+            font-weight: 500;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.7;
+        }
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            opacity: 1;
+        }
+        .carousel-control-prev {
+            left: 10px;
+        }
+        .carousel-control-next {
+            right: 10px;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+        }
+        .carousel-inner {
+            overflow: visible;
+        }
+        @media (max-width: 991px) {
+            .testimonial-card {
+                margin-bottom: 30px;
+            }
+        }
+        @media (max-width: 767px) {
+            .carousel-item {
+                text-align: center;
+            }
+            .testimonial-card {
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+     </style>
 </head>
 <body>
     <!-- Header -->
@@ -45,18 +319,176 @@
 <!-- main section start -->
     <main>
 
+        
+
         <!-- Section 1 - Hero  -->
         <section class="hero-section">
-            <h1 class="hero-title">
-                <span class="begin-your">BEGIN YOUR</span>
-                <span class="journey">JOURNEY</span>
-            </h1>
-            <div class="hero-card"> </div>
-                <!-- Your hero card content here -->
-            <button class="explore-now-btn">Explore Now</button>
-           
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="begin-your">BEGIN YOUR</span> <span class="journey">JOURNEY</span>
+              </h1>
+              <div class="hero-card">
+                <a href="#user-app">
+                <button class="explore-btn" >Explore</button>
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="intro-section">
+            <div class="container">
+                <p class="intro-text">
+                    Welcome to Capriole, your ultimate destination for sports enthusiasts seeking convenient solutions for sports venue booking and academy management.
+                </p>
+        
+                <div class="vision-who-section">
+                    <div class="vision-box">
+                        <h2>OUR <span>VISION</span></h2>
+
+                        <p>
+                            At Capriole, our vision is to revolutionize the way sports enthusiasts access and manage sports facilities and academies. We aim to become the go-to platform that connects athletes, coaches, and sports enthusiasts with their ideal venues and training programs.
+                        </p>
+                    </div>
+        
+                    <div class="who-box">
+                        <h2>WHO ARE <span>WE?</span></h2>
+                        <p>
+                            We are a dedicated team of sports enthusiasts, tech-savvy professionals, and industry experts who are passionate about making sports more accessible and enjoyable for everyone. Our collective expertise in sports management, technology, and customer service drives our commitment to delivering exceptional solutions to our users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <section>
+            <div class="main-container">
+                <div class="text-area">
+                    <h2 class="section-title">WHAT WE <span>DO</span></h2>
+    
+    
+                    <div class="service-feature">
+                        <h2>Easy Venue Booking</h2>
+                        <p>
+                            Are your customers raving about you on social media?
+                            Share their<br>
+                            great stories to help turn potential customers into
+                            loyal ones.
+                        </p>
+                    </div>
+    
+                    <div class="service-feature">
+                        <h2>Academy Management</h2>
+                        <p>
+                            For coaches, academies, and sports organizations, we
+                            offer a
+                            comprehensive academy management system. Our
+                            software simplifies
+                            administrative tasks, streamlines enrollment,
+                            handles payment
+                            processing, and communication. Focus on coaching and
+                            player
+                            development while we handle the rest.
+                        </p>
+                    </div>
+    
+                    <div class="service-feature">
+                        <h2>Community Management</h2>
+                        <p>
+                            We believe that sports are about more than just the
+                            game; they are
+                            about building community. Our platform fosters a
+                            vibrant sports
+                            community where enthusiasts can connect, share
+                            experiences, and
+                            discover new opportunities to grow and excel in
+                            their chosen
+                            sports.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- section 3  -->
+        <section class="about-section">
+       
+            <div class="about-container">
+                
+                <div class="left-content">
+                  <h1>
+                    Get <br>
+                    <span>Playing</span> <br>
+                    With 
+                    <br>
+                    <span>Us</span>
+                  </h1>
+                 
+                  </div>
+                  <div class="image-section">
+                   
+                    <img src="assets/images/GetPlayingwithUsIllustration1.png" alt="Cricket Player">
+                </div>
+            
+                <div class="right-content">
+                  <h2>Capriole</h2>
+                  <p>Capriole, born from a passionate group in a vibrant city, aims to connect sports enthusiasts to their dream playgrounds. Our mission is to make sports accessible to people of all ages and skill levels, empowering them to nurture their passion and unleash their potential.</p>
+                  <h2>The Vision</h2>
+                  <p>Capriole goes beyond being a mobile app; it's a gateway to endless possibilities in the sporting world. We bring convenience, joy, and camaraderie, helping parents find after-school activities and professionals unwind.</p>
+                </div>
+                <div class="stars">
+                  <span class="star">✦</span>
+                  <span class="star">✦</span>
+                  <span class="star">✦</span>
+                </div>
+              </div>
+            
         </section>
 
+        <!-- Section 4 -->
+         <!-- First App Section (User App) -->
+    <section class="app-section" id="user-app">
+        <div class="app-container">
+            <div class="app-image">
+                <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App">
+            </div>
+            <div class="app-details">
+                <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
+                <p class="app-subtitle">User App</p>
+                <p class="app-description">
+                    Download Our App <br>
+                    and make playing <br>
+                    Easier
+                </p>
+                <div class="store-badges">
+                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
+                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Second App Section (Admin App) -->
+    <section id="admin-app" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
+" class="app-section">
+        <div style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
+" class="app-container">
+            <div class="app-details">
+                <h2 style="color: azure;" class="app-title">Capriole <img src="assets/images/Mobileappicon2.png" alt="Capriole Logo"></h2>
+                <p style="color: azure;" class="app-subtitle">Admin App</p>
+                <p style="color: azure;"  class="app-description">
+                    Download Our App <br>
+                    and Connect With <br>
+                    Athletes Easily
+                </p>
+                <div class="store-badges">
+                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
+                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
+                    
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Admin App">
+            </div>
+        </div>
+    </section>
         <!-- Section 2 -->
         <section class="sports-section">
             <div class="container">
@@ -103,94 +535,119 @@
                             <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
                             <span>Football</span>
                         </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
+                            <span>Basketball</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
+                            <span>Badminton</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
+                            <span>Volleyball</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
+                            <span>Karate</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
+                            <span>Football</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
+                            <span>Basketball</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
+                            <span>Badminton</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
+                            <span>Volleyball</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
+                            <span>Karate</span>
+                        </a>
+                        <a href="#" class="logo">
+                            <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
+                            <span>Football</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        
-<!-- section 3  -->
-        <section class="about-section">
-       
-            <div class="about-container">
-                
-                <div class="left-content">
-                  <h1>
-                    Get <br>
-                    <span>Playing</span> <br>
-                    With 
-                    <br>
-                    <span>Us</span>
-                  </h1>
-                 
-                  </div>
-                  <div class="image-section">
-                   
-                    <img src="assets/images/GetPlayingwithUsIllustration1.png" alt="Cricket Player">
+        <section class="testimonial-section">
+            <div class="container">
+                <h2 class="text-center testimonial-title">TESTIMONIALS</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
+                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="testimonial-author">Rakesh</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
+                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="testimonial-author">Rakesh</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
+                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p class="testimonial-author">Rakesh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Exceptional Service and Quality"</p>
+                                        <p class="testimonial-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <p class="testimonial-author">Sarah</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Highly Recommended for Everyone"</p>
+                                        <p class="testimonial-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                        <p class="testimonial-author">Michael</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="testimonial-card">
+                                        <p class="testimonial-quote">"Outstanding Experience"</p>
+                                        <p class="testimonial-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                                        <p class="testimonial-author">Emily</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
-            
-                <div class="right-content">
-                  <h2>Capriole</h2>
-                  <p>Capriole, born from a passionate group in a vibrant city, aims to connect sports enthusiasts to their dream playgrounds. Our mission is to make sports accessible to people of all ages and skill levels, empowering them to nurture their passion and unleash their potential.</p>
-                  <h2>The Vision</h2>
-                  <p>Capriole goes beyond being a mobile app; it's a gateway to endless possibilities in the sporting world. We bring convenience, joy, and camaraderie, helping parents find after-school activities and professionals unwind.</p>
-                </div>
-                <div class="stars">
-                  <span class="star">✦</span>
-                  <span class="star">✦</span>
-                  <span class="star">✦</span>
-                </div>
-              </div>
-            
+            </div>
         </section>
-
-        <!-- Section 4 -->
-         <!-- First App Section (User App) -->
-    <section class="app-section">
-        <div class="app-container">
-            <div class="app-image">
-                <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App">
-            </div>
-            <div class="app-details">
-                <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
-                <p class="app-subtitle">User App</p>
-                <p class="app-description">
-                    Download Our App <br>
-                    and make playing <br>
-                    Easier
-                </p>
-                <div class="store-badges">
-                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
-                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Second App Section (Admin App) -->
-    <section style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
-" class="app-section">
-        <div style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
-" class="app-container">
-            <div class="app-details">
-                <h2 style="color: azure;" class="app-title">Capriole <img src="assets/images/Mobileappicon2.png" alt="Capriole Logo"></h2>
-                <p style="color: azure;" class="app-subtitle">Admin App</p>
-                <p style="color: azure;"  class="app-description">
-                    Download Our App <br>
-                    and Connect With <br>
-                    Athletes Easily
-                </p>
-                <div class="store-badges">
-                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
-                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
-                    
-                </div>
-            </div>
-            <div class="app-image">
-                <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Admin App">
-            </div>
-        </div>
-    </section>
+        
+        </section>
         <!-- Section 5 -->
         <section class="contact-section">
             <div class="contact-container">
@@ -248,8 +705,8 @@
                 <div class="col-md-4">
                     <h2>APP DOWNLOAD</h2>
                     <ul>
-                        <li><a href="#">User App Download</a></li>
-                        <li><a href="#">Admin App Download</a></li>
+                        <li><a href="#user-app">User App Download</a></li>
+                        <li><a href="#admin-app">Admin App Download</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

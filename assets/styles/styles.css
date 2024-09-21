@@ -31,12 +31,9 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
-  cursor: url('../images/Criket.png'), auto;
+}
 
-}
-a, button, .menu-toggle, .store-badges a {
-  cursor: url('../images/Basketball.png'), pointer;
-}
+
 /* common container */
 .container {
   width: 100%;
@@ -50,7 +47,7 @@ a, button, .menu-toggle, .store-badges a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-small) var(--spacing-small);
+  padding: 2px 5px;
   background-color: var(--secondary-color);
   position: sticky;
   z-index: 1001;
@@ -63,8 +60,8 @@ a, button, .menu-toggle, .store-badges a {
   gap: 10px;
   opacity: 1;
   /* font-family: DM Sans; */
-  font-size: 48px;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 300;
   line-height: 62.5px;
   text-align: left;
 }
@@ -94,7 +91,7 @@ a, button, .menu-toggle, .store-badges a {
   margin: 0 var(--spacing-medium);
   text-decoration: none;
   color: var(--text-color);
-  font-size: var(--font-medium);
+  /* font-size: var(--font-medium); */
   transition: color 0.3s ease;
 }
 
@@ -152,7 +149,7 @@ a, button, .menu-toggle, .store-badges a {
   top: 0;
   right: -300px;
   width: 300px;
-  height: 80%;
+  height: 60%;
   background-color: var(--secondary-color);
   box-shadow: var(--box-shadow);
   display: flex;
@@ -271,43 +268,19 @@ a, button, .menu-toggle, .store-badges a {
   }
 } */
 
-/*Section 1 -  Hero Section */
-.hero-section {
-  position: relative;
-  min-height: 100vh;
+/*Section 1 -  Hero Section */.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-medium);
-  overflow: hidden;
+  /* min-height: 100vh; */
+  padding: 0;
+  margin: 0;
   background-color: var(--secondary-color);
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/FirstPageillustration1.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: brightness(0.8);
-  z-index: 1;
-  transform: scale(1.1);
-  transition: transform 0.5s ease-out;
-}
-
-.hero-section:hover::before {
-  transform: scale(1);
+  overflow: hidden;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
   width: 100%;
   max-width: 1200px;
   display: flex;
@@ -316,21 +289,12 @@ a, button, .menu-toggle, .store-badges a {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(6.5rem, 5vw, 3.5rem);
   font-weight: bold;
   line-height: 1.2;
   text-align: center;
-  margin: 0 0 var(--spacing-medium);
-  padding: var(--spacing-small) var(--spacing-medium);
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-title:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
 }
 
 .hero-title .begin-your {
@@ -354,140 +318,61 @@ a, button, .menu-toggle, .store-badges a {
   -webkit-text-stroke: 0;
 }
 
+
 .hero-card {
-  position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 100vw;
   aspect-ratio: 16 / 9;
   border-radius: 25px;
-  overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hero-card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
-}
-
-.hero-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, transparent 60%, rgba(0, 0, 0, 0.7));
+  background-image: url('../images/FirstPageillustration1.svg');
+  background-size: contain; /* Ensure the image covers the entire card */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   z-index: 1;
+  margin-top: -70px; /* This pulls the image slightly above the title */
 }
+
 
 .explore-btn {
   position: absolute;
-  bottom: var(--spacing-medium);
+  bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: white;
+  color: #3498db;
   border: none;
-  padding: var(--spacing-small) var(--spacing-large);
-  border-radius: 50px;
+  padding: 10px 20px;
+  border-radius: 20px;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
   cursor: pointer;
-  z-index: 2;
+  transition: all 0.3s ease;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .explore-btn:hover {
-  background-color: var(--button-hover-bg);
-  color: var(--button-hover-color);
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  background-color: #2980b9;
+  color: white;
 }
 
-/* Responsive adjustments */
-@media (min-width: 1024px) {
-  .hero-section {
-    padding: var(--spacing-large);
-  }
-
-  .hero-content {
-    flex-direction: column;
-    align-items: center;
-  }
-
+/* Mobile adjustments */
+/* Mobile adjustments */
+@media (max-width: 768px) {
   .hero-title {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: var(--spacing-large);
+    margin-top: 0;
+    font-size: clamp(2.1rem, 4vw, 2.5rem);
   }
 
   .hero-card {
-    width: 100%;
+    margin-top: 0;
+    height: 87vh; /* Full vertical height */
+    background-size: cover; /* Maintain the image fill for the section */
+    background-position: center; /* Keep the image centered */
+    border-radius: 0;
   }
-}
-
-@media (max-width: 1023px) {
-  .hero-section {
-    padding: var(--spacing-medium) var(--spacing-small);
-  }
-
-  .hero-title {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: var(--spacing-medium);
-  }
-
-  .hero-card {
-    aspect-ratio: 4 / 3;
-  }
-
-  .explore-btn {
-    padding: var(--spacing-small) var(--spacing-medium);
-    font-size: 1rem;
-  }
-}
-
-/* Animation for hero elements */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.hero-title,
-.hero-card,
-.explore-btn {
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-
-.hero-card {
-  animation-delay: 0.2s;
-}
-
-.explore-btn {
-  animation-delay: 0.4s;
-}
-
-/*  glow effect for title */
-@keyframes glow {
-  0%,
-  100% {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  }
-}
-
-.hero-title {
-  animation: fadeInUp 0.8s ease-out forwards, glow 3s ease-in-out infinite;
 }
 
 /* Section 2 - Sports Offered Section */
@@ -534,10 +419,10 @@ a, button, .menu-toggle, .store-badges a {
 
 .logo {
   flex: 0 0 auto;
-  width: calc(14.28% - 20px); /* 7 logos per row */
+  width: calc(12% - 8px); /* Adjusted for 7 logos per row */
   aspect-ratio: 1 / 1;
-  margin: 0 10px;
-  padding: 10px;
+  margin: 0 8px; /* Reduced margin */
+  padding: 4px; /* Reduced padding */
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
@@ -562,8 +447,8 @@ a, button, .menu-toggle, .store-badges a {
 }
 
 .logo img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 80%;
   object-fit: contain;
   transition: transform 0.3s ease;
   background: #96C9F4;
@@ -605,47 +490,30 @@ a, button, .menu-toggle, .store-badges a {
   flex-shrink: 0; /* Prevent logos from shrinking */
 }
 
-/* Media queries for responsive design */
 @media (max-width: 1200px) {
-  .logo {
-    width: calc(16.666% - 20px); /* 6 logos per row */
-  }
   .logos-row {
-    animation-duration: 40s; /* Adjust speed */
+    animation-duration: 30s; /* Keep laptop speed consistent */
   }
 }
 
 @media (max-width: 992px) {
-  .logo {
-    width: calc(20% - 20px); /* 5 logos per row */
-  }
   .logos-row {
-    animation-duration: 45s;
+    animation-duration: 25s; /* Faster for tablets */
   }
 }
 
 @media (max-width: 768px) {
-  .logo {
-    width: calc(25% - 20px); /* 4 logos per row */
-  }
   .logos-row {
-    animation-duration: 60s;
+    animation-duration: 20s; /* Even faster for small tablets/phones */
   }
 }
 
 @media (max-width: 576px) {
-  .logo {
-    width: calc(33.333% - 20px); /* 3 logos per row */
-  }
   .logos-row {
-    animation-duration: 55s; /* Faster for mobile, but not too fast */
+    animation-duration: 15s; /* Fastest for mobile */
   }
 }
 
-/* Pause animation on hover */
-.logos-container:hover .logos-row {
-  animation-play-state: paused;
-}
 
 /* section 3 - About Section */
 .about-section {
@@ -1327,6 +1195,7 @@ textarea {
 
 .footer a:hover {
   opacity: 0.8;
+  color: rgb(255, 255, 255);
 }
 
 .social-icons {

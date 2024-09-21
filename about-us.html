@@ -184,7 +184,7 @@
         .main-image {
             flex: 1;
             background-image: url("assets/images/Criket.png");
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             position: relative;
             min-height: 580px;
@@ -192,7 +192,7 @@
 
         .main-logo {
             position: absolute;
-            top: 20px;
+            top: 40px;
             left: 20px;
             color: white;
             font-size: 28px;
@@ -274,19 +274,17 @@
         }
 
         .image-area {
-            flex: 2;
-            background-image: url("assets/images/Tennisball.png");
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            border-radius: 10px;
-            height: 100%;
-            height: 100%;
-            /* Ensure the image area occupies full height */
-            min-height: 500px;
-            /* Add a minimum height for laptop view */
-            margin-top: 20px;
-        }
+    flex: 2;
+    background-image: url("assets/images/Tennisball.png");
+    background-size: cover; /* Use cover instead of contain to fill the area */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    position: relative;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 600px; /* Minimum height for laptop view */
+    margin-top: 20px;
+}
 
         .brand-logo {
             position: absolute;
@@ -353,85 +351,58 @@
             }
         }
 
+        /* why choose us  */
         .why-choose-us {
-            min-height: 80vh;
-            /* Ensures the section takes the full height of the viewport */
-            padding: 40px 20px;
-            background-color: #fff;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f0f4f8;
+}
 
-        .why-choose-us h2 {
-            font-size: 2.5rem;
-            color: #007bff;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+/* .why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+} */
 
-        .why-choose-us h2 span {
-            color: #000;
-            font-weight: 400;
-        }
+.benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between cards */
+}
 
-        .benefit {
-            margin: 20px auto;
-            max-width: 800px;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #f7f7f7;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
+.benefit {
+    flex: 1 1 280px; /* Responsive behavior */
+    max-width: 300px; /* Max width for better layout */
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
-        .benefit:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        }
+.benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 
-        .benefit h3 {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #000;
-            margin-bottom: 10px;
-        }
+.benefit h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #007bff;
+}
 
-        .benefit p {
-            font-size: 1.1rem;
-            color: #555;
-            line-height: 1.6;
-        }
+.benefit p {
+    font-size: 1rem;
+    color: #555;
+}
 
-        @media (max-width: 768px) {
-            .why-choose-us h2 {
-                font-size: 2rem;
-            }
+.icon {
+    font-size: 3rem; /* Adjust as needed */
+    margin-bottom: 15px;
+    color: #007bff; /* Icon color */
+}
 
-            .benefit h3 {
-                font-size: 1.5rem;
-            }
-
-            .benefit p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .why-choose-us h2 {
-                font-size: 1.8rem;
-            }
-
-            .benefit h3 {
-                font-size: 1.4rem;
-            }
-
-            .benefit p {
-                font-size: 0.9rem;
-            }
-        }
 
         /* Join Us Section */
         .join-us-section {
@@ -648,49 +619,30 @@
     </section>
 
 <!-- section 4 -->
-    <section>
-        <div class="why-choose-us">
-            <h2 class="section-title">WHY CHOOSE<span> US ?</span></h2>
-            <div class="benefit">
-                <h3>Convenience</h3>
-                <p>
-                    We make sports venue booking and academy management
-                    hassle-free. Our
-                    platform saves you time and effort so you can focus on
-                    what you love
-                    – playing and coaching sports.
-                </p>
-            </div>
-            <div class="benefit">
-                <h3>Wide Network</h3>
-                <p>
-                    With an extensive network of sports facilities and
-                    academies, we
-                    offer a variety of options to suit your preferences and
-                    needs.
-                </p>
-            </div>
-            <div class="benefit">
-                <h3>User-Focused</h3>
-                <p>
-                    Your satisfaction is our priority. We listen to your
-                    feedback and
-                    continually improve our services to meet your evolving
-                    requirements.
-                </p>
-            </div>
-            <div class="benefit">
-                <h3>Passion for Sports</h3>
-                <p>
-                    We share your passion for sports and are committed to
-                    promoting
-                    physical activity and skill development among athletes
-                    of all
-                    levels.
-                </p>
-            </div>
+<section class="why-choose-us">
+    <h2 class="section-title">WHY CHOOSE <span>US ?</span></h2>
+
+    <div class="benefits-container">
+        <div class="benefit">
+            <i class="icon expert-icon"></i>
+            <h3>Expertise in Sports Management</h3>
+            <p>Our team is composed of professionals with extensive experience in sports management and technology.</p>
         </div>
-    </section>
+        <div class="benefit">
+            <i class="icon booking-icon"></i>
+            <h3>Seamless Booking Experience</h3>
+            <p>We provide a user-friendly platform that makes venue booking quick and easy.</p>
+        </div>
+        <div class="benefit">
+            <i class="icon community-icon"></i>
+            <h3>Community Focused</h3>
+            <p>We foster a vibrant sports community where enthusiasts can connect and share experiences.</p>
+        </div>
+        <!-- Add more benefits as needed -->
+    </div>
+</section>
+
+
 
             <!-- section-5 Join Us Today  -->
 
@@ -734,8 +686,8 @@
                 <div class="col-md-4">
                     <h3>APP DOWNLOAD</h3>
                     <ul>
-                        <li><a href="#">User App Download</a></li>
-                        <li><a href="#">Admin App Download</a></li>
+                        <li><a href="#user-app">User App Download</a></li>
+                        <li><a href="#admin-app">Admin App Download</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

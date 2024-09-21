@@ -55,6 +55,7 @@
             height: 60%;
             position: relative;
             overflow: hidden;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='16'%3E%3C/line%3E%3Cline x1='8' y1='12' x2='16' y2='12'%3E%3C/line%3E%3C/svg%3E") 16 16, auto;
         }
         #ball {
             width: 50px;
@@ -62,7 +63,6 @@
             background-color: #fff;
             border-radius: 50%;
             position: absolute;
-            cursor: pointer;
             transition: all 0.1s ease;
         }
         #score {
@@ -95,7 +95,6 @@
         const gameArea = document.getElementById('gameArea');
         const scoreElement = document.getElementById('score');
         let score = 0;
-
         function moveBall() {
             const maxX = gameArea.clientWidth - ball.clientWidth;
             const maxY = gameArea.clientHeight - ball.clientHeight;
@@ -104,13 +103,11 @@
             ball.style.left = `${newX}px`;
             ball.style.top = `${newY}px`;
         }
-
         ball.addEventListener('click', () => {
             score++;
             scoreElement.textContent = `Score: ${score}`;
             moveBall();
         });
-
         moveBall();
         setInterval(moveBall, 2000);
     </script>
