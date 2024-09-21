@@ -19,7 +19,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  cursor: url('cricket-bat-cricket-ball-3D-custom-cursor.cur'), default;
+  /* cursor: url('cricket-bat-cricket-ball-3D-custom-cursor.cur'), default; */
 
 }
 
@@ -31,9 +31,12 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
+  cursor: url('../images/Criket.png'), auto;
 
 }
-
+a, button, .menu-toggle, .store-badges a {
+  cursor: url('../images/Basketball.png'), pointer;
+}
 /* common container */
 .container {
   width: 100%;
