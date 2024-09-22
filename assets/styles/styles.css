@@ -47,7 +47,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 5px;
+  padding: 2px 10px; /* Adjusted padding for more space */
   background-color: var(--secondary-color);
   position: sticky;
   z-index: 1001;
@@ -57,9 +57,8 @@ html {
   height: auto;
   top: 0;
   left: 0;
-  gap: 10px;
+  gap: 15px; /* Increased gap between items */
   opacity: 1;
-  /* font-family: DM Sans; */
   font-size: 21px;
   font-weight: 300;
   line-height: 62.5px;
@@ -75,11 +74,7 @@ html {
 
 .navbar-logo {
   width: 150px;
-  height: 50px;
-  top: 55px;
-  left: 138px;
-  gap: 0px;
-  opacity: 0px;
+  height: auto;
   margin-left: 25px;
 }
 
@@ -91,7 +86,6 @@ html {
   margin: 0 var(--spacing-medium);
   text-decoration: none;
   color: var(--text-color);
-  /* font-size: var(--font-medium); */
   transition: color 0.3s ease;
 }
 
@@ -149,15 +143,19 @@ html {
   top: 0;
   right: -300px;
   width: 300px;
-  height: 60%;
-  background-color: var(--secondary-color);
-  box-shadow: var(--box-shadow);
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  box-shadow: 0 10px 40px 5px rgba(0, 123, 255, 0.5); /* Stronger blue shadow */  backdrop-filter: blur(15px); /* Applies a stronger blur effect */
+  -webkit-backdrop-filter: blur(15px); /* Safari support */
+  border-radius: 10px; /* Optional rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.18); /* Optional inner border for a glass effect */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   transition: right 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   z-index: 1000;
 }
+
 
 .nav-container.open {
   right: 0;
@@ -198,11 +196,13 @@ html {
 .social-icons a:hover {
   color: var(--primary-color);
 }
+
 .navbar-logo {
   width: 150px; 
   height: auto;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar-logo {
     display: none;
@@ -227,10 +227,15 @@ html {
     display: flex;
   }
 
+  .nav-desktop a {
+    padding: 0 20px; /* Adjust spacing for desktop items */
+  }
+
   .nav-container {
     display: none;
   }
 }
+
 
 /* @media (max-width: 768px) {
   .hero-title {
@@ -268,7 +273,8 @@ html {
   }
 } */
 
-/*Section 1 -  Hero Section */.hero-section {
+/*Section 1 -  Hero Section */
+.hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -363,7 +369,7 @@ html {
 @media (max-width: 768px) {
   .hero-title {
     margin-top: 0;
-    font-size: clamp(2.1rem, 4vw, 2.5rem);
+    font-size: clamp(2.0rem, 4vw, 2.5rem);
   }
 
   .hero-card {
@@ -507,10 +513,26 @@ html {
     animation-duration: 20s; /* Even faster for small tablets/phones */
   }
 }
-
 @media (max-width: 576px) {
+  /* Increase logo size in mobile view */
+  .logo {
+    width: calc(25% - 8px); /* Increase the logo width to 25% per logo */
+    aspect-ratio: 1 / 1;
+    margin: 0 4px; /* Reduce margin slightly to maintain spacing */
+  }
+
+  /* Adjust animation duration for mobile speed */
   .logos-row {
     animation-duration: 15s; /* Fastest for mobile */
+  }
+
+  .logo img {
+    width: 80%; /* Increase image size inside the logo */
+    height: 80%;
+  }
+
+  .logo span {
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Slightly increase text size */
   }
 }
 
@@ -1160,7 +1182,7 @@ textarea {
 }
 
 .footer h2 {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 15px;
 }

@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capriole | Begin Your Journey</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- testo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- scroll to top - button -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
@@ -28,13 +38,13 @@
 }
 
 
-.service-feature h2 {
+.service-feature>h2 {
   font-size: 1.5rem;
   color: #007bff;
   margin: 10px 0;
 }
 
-.service-feature p {
+.service-feature>p {
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
@@ -52,118 +62,115 @@
     font-size: 2rem;
   }
 
-  .service-feature h2 {
+  .service-feature >h2 {
     font-size: 1.25rem;
   }
 
-  .service-feature p {
+  .service-feature>p {
     font-size: 0.9rem;
   }
 }
-
-/* intro section */
 .intro-section {
-    padding: 80px 0;
-    background-color: #ffffff;
-    text-align: center;
-}
+            padding: 60px 0;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+        .vision-who-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: left;
+            margin-top: 40px;
+        }
+        .vision-box, .who-box {
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .vision-box>h2, .who-box>h2 {
+            font-size: 2rem;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .vision-box >h2 span, .who-box >h2 span {
+            font-weight: normal;
+            color: #333;
+        }
+        .vision-box p, .who-box p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+        }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
-    height: 100%;
-}
-
-.intro-text {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.vision-who-section {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-    margin-top: 30px;
-}
-
-.vision-box, .who-box {
-    width: 48%;
-}
-
-.vision-box h2, .who-box h2 {
-    font-size: 2rem;
-    color: #007bff;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-.vision-box h2 span, .who-box h2 span {
-    font-weight: normal;
-    color: #333;
-}
-
-.vision-box p, .who-box p {
-    font-size: 1rem;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .vision-who-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .vision-box, .who-box {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-
-.testimonials-container {
+        /*  */
+        .testimonials-section {
+            background-color: #f4f4f4;
+            padding: 60px 0;
+        }
+        .testimonials-container {
             max-width: 1200px;
             margin: 0 auto;
             position: relative;
+            padding: 0 40px;
         }
         h1 {
-            color: #0088cc;
+            color: #007bff;
             text-align: center;
             font-size: 2.5em;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
         .testimonial {
             background-color: white;
             border-radius: 8px;
-            padding: 20px;
-            margin: 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            height: 250px;
+            padding: 30px;
+            margin: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            height: auto;
+            min-height: 220px;
             overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .testimonial:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
         }
         .testimonial h3 {
             color: #333;
             margin-top: 0;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            margin-bottom: 15px;
         }
         .testimonial p {
             color: #666;
-            font-size: 0.9em;
+            font-size: 1em;
+            line-height: 1.6;
         }
         .author {
             font-weight: bold;
             text-align: right;
-            color: #0088cc;
+            color: #007bff;
+            margin-top: 20px;
         }
         .slick-arrow {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: #0088cc;
+            background: #007bff;
             border-radius: 50%;
             width: 40px;
             height: 40px;
@@ -172,19 +179,23 @@
             justify-content: center;
             z-index: 1;
             cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .slick-arrow:hover {
+            background: #0056b3;
         }
         .slick-prev {
-            left: -50px;
+            left: 0;
         }
         .slick-next {
-            right: -50px;
+            right: 0;
         }
         .slick-arrow:before {
             content: '';
             border: solid white;
             border-width: 0 3px 3px 0;
             display: inline-block;
-            padding: 5px;
+            padding: 6px;
         }
         .slick-prev:before {
             transform: rotate(135deg);
@@ -195,92 +206,22 @@
             margin-right: 5px;
         }
         .slick-dots {
-            bottom: -40px;
+            bottom: -50px;
         }
         .slick-dots li button:before {
             font-size: 12px;
-            color: #0088cc;
-        }
-
-        /*  */
-        .testimonial-section {
-            background-color: #f8f9fa;
-            padding: 60px 0;
-            overflow: hidden;
-        }
-        .testimonial-title {
             color: #007bff;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
         }
-        .testimonial-card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin: 0 10px 20px;
-            height: 100%;
-            transition: transform 0.3s ease;
-        }
-        .testimonial-card:hover {
-            transform: translateY(-5px);
-        }
-        .testimonial-quote {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        .testimonial-content {
-            color: #6c757d;
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        .testimonial-author {
-            text-align: left;
-            font-weight: 500;
-        }
-        .carousel-control-prev,
-        .carousel-control-next {
-            width: 40px;
-            height: 40px;
-            background-color: #007bff;
-            border-radius: 50%;
-            top: 50%;
-            transform: translateY(-50%);
-            opacity: 0.7;
-        }
-        .carousel-control-prev:hover,
-        .carousel-control-next:hover {
-            opacity: 1;
-        }
-        .carousel-control-prev {
-            left: 10px;
-        }
-        .carousel-control-next {
-            right: 10px;
-        }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            width: 20px;
-            height: 20px;
-        }
-        .carousel-inner {
-            overflow: visible;
-        }
-        @media (max-width: 991px) {
-            .testimonial-card {
-                margin-bottom: 30px;
+        @media (min-width: 768px) {
+            .vision-box, .who-box {
+                width: calc(50% - 15px);
             }
-        }
-        @media (max-width: 767px) {
-            .carousel-item {
-                text-align: center;
+            .testimonials-container {
+                padding: 0 60px;
             }
-            .testimonial-card {
-                max-width: 450px;
-                margin-left: auto;
-                margin-right: auto;
+            .slick-arrow {
+                width: 50px;
+                height: 50px;
             }
         }
      </style>
@@ -297,6 +238,8 @@
                 <a href="app.html">Download App</a>
                 <a href="about-us.html">About us</a>
                 <a href="contact-us.html">Contact us</a>
+                <a href="#">Blogs</a>
+
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
                 <span></span>
@@ -307,6 +250,8 @@
                 <a href="app.html">Download App</a>
                 <a href="about-us.html">About us</a>
                 <a href="contact-us.html">Contact us</a>
+                <a href="#">Blogs</a>
+
             </div>
             <div class="social-icons">
                 <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -579,74 +524,32 @@
                 </div>
             </div>
         </section>
-        <section class="testimonial-section">
-            <div class="container">
-                <h2 class="text-center testimonial-title">TESTIMONIALS</h2>
-                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
-                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        <p class="testimonial-author">Rakesh</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
-                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        <p class="testimonial-author">Rakesh</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Such A Great Product Would 100% Refer"</p>
-                                        <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                        <p class="testimonial-author">Rakesh</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Exceptional Service and Quality"</p>
-                                        <p class="testimonial-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <p class="testimonial-author">Sarah</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Highly Recommended for Everyone"</p>
-                                        <p class="testimonial-content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                                        <p class="testimonial-author">Michael</p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="testimonial-card">
-                                        <p class="testimonial-quote">"Outstanding Experience"</p>
-                                        <p class="testimonial-content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-                                        <p class="testimonial-author">Emily</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <section class="testimonials-section">
+            <div class="testimonials-container">
+                <h2 class="section-title">WHAT OUR <span>CLIENT SAYS</span></h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial">
+                        <h3>Exceptional Service</h3>
+                        <p>"Their team went above and beyond to ensure our project was a success. The level of dedication and expertise was truly impressive."</p>
+                        <p class="author">- CEO, Technology Company</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="testimonial">
+                        <h3>Innovative Solutions</h3>
+                        <p>"The innovative approach they brought to our challenges has transformed our business processes. We couldn't be happier with the results."</p>
+                        <p class="author">- CTO, Innovation Firm</p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Reliable Partner</h3>
+                        <p>"We've found a reliable partner in this company. Their consistent quality and timely delivery have made them an invaluable asset to our operations."</p>
+                        <p class="author">- Operations Director</p>
+                    </div>
+                    <div class="testimonial">
+                        <h3>Outstanding Results</h3>
+                        <p>"The results we've achieved with this company have been outstanding. Their expertise and dedication have significantly improved our performance."</p>
+                        <p class="author">- VP of Marketing</p>
+                    </div>
                 </div>
             </div>
-        </section>
-        
         </section>
         <!-- Section 5 -->
         <section class="contact-section">
@@ -715,6 +618,7 @@
                         <li><a href="about-us.html">About us</a></li>
                         <li><a href="app.html">Download App</a></li>
                         <li><a href="contact-us.html">Contact us</a></li>
+                        <li><a href="#">Blogs</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         <li><a href="pricing-refund-policy.html">Pricing & Refund Policy</a></li>
@@ -734,12 +638,19 @@
             <p>Made with love by <strong>Markyway</strong></p>
         </div>
     </footer>
+    <button id="scrollTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-none" onclick="scrollToTop()">
+        <i class="bi bi-arrow-up"></i>
+      </button>
     
+
     <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> 
+ <!-- testimonial -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
