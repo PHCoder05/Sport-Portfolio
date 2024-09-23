@@ -31,6 +31,7 @@ html {
   background-color: var(--background-color);
   color: var(--text-color);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 
@@ -145,7 +146,7 @@ html {
   width: 300px;
   height: 70%;
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  box-shadow: 0 10px 40px 5px rgba(0, 123, 255, 0.5); /* Stronger blue shadow */  backdrop-filter: blur(15px); /* Applies a stronger blur effect */
+  box-shadow: 0 10px 40px 5px rgba(0, 123, 255, 0.2); /* Stronger blue shadow */  backdrop-filter: blur(15px); /* Applies a stronger blur effect */
   -webkit-backdrop-filter: blur(15px); /* Safari support */
   border-radius: 10px; /* Optional rounded corners */
   border: 1px solid rgba(255, 255, 255, 0.18); /* Optional inner border for a glass effect */
@@ -237,41 +238,7 @@ html {
 }
 
 
-/* @media (max-width: 768px) {
-  .hero-title {
-    font-size: calc(var(--font-large) * 0.8);
-  }
 
-  .hero-card {
-    height: 40vh;
-  }
-
-  .contact-details {
-    text-align: center;
-  }
-
-  .contact-icons li {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 576px) {
-  .hero-title {
-    font-size: calc(var(--font-large) * 0.6);
-  }
-
-  .section-title {
-    font-size: calc(var(--font-large) * 0.7);
-  }
-
-  .contact-title {
-    font-size: calc(var(--font-large) * 0.8);
-  }
-
-  .contact-description {
-    font-size: calc(var(--font-small) * 0.9);
-  }
-} */
 
 /*Section 1 -  Hero Section */
 .hero-section {
@@ -958,10 +925,19 @@ html {
   font-size: 1rem;
 }
 
+/* Placeholder styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #a9a9a9; /* Lighter gray to ensure visibility */
+  opacity: 1; /* Make sure it's fully visible */
+}
+
 textarea {
   height: 100px;
   resize: none;
+  color: #000; /* Ensure the text color is black for contrast */
 }
+
 
 .submit-btn {
   background-color: #69d1ff;
@@ -1151,13 +1127,11 @@ textarea {
 } */
 
 
-
 .footer {
   background-color: #00a0e3;
   color: white;
   padding: 60px 0 40px;
   position: relative;
-
 }
 
 .footer-container {
@@ -1179,6 +1153,11 @@ textarea {
   max-width: 180px;
   height: auto;
   margin-bottom: 20px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.footer-logo:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .footer h2 {
@@ -1217,7 +1196,7 @@ textarea {
 
 .footer a:hover {
   opacity: 0.8;
-  color: rgb(255, 255, 255);
+  color: white; /* Ensure the color stays consistent on hover */
 }
 
 .social-icons {
@@ -1227,14 +1206,20 @@ textarea {
 
 .social-icons a {
   font-size: 24px;
+  color: white; /* Set default color for icons */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d236a1; /* Add hover color to icons */
 }
 
 .dotted-image {
-  position: ;
   max-width: 100%;
   height: 30vh;
   margin: 20px 0;
 }
+
 .footer .footer-bottom {
   padding: 10px 0;
   margin-top: 20px;
@@ -1251,7 +1236,7 @@ textarea {
 }
 
 .footer .footer-bottom p strong {
-  color: #d236a1; /* Highlight Markyway with a vibrant color */
+  color: #d236a1; /* Highlight Markyway with vibrant color */
   font-weight: bold;
   font-size: 16px;
 }
@@ -1264,13 +1249,18 @@ textarea {
   vertical-align: middle;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
   }
-  
+
   .footer-column {
     width: 100%;
     margin-bottom: 30px;
+  }
+
+  .social-icons {
+    justify-content: center; /* Center social icons on smaller screens */
   }
 }

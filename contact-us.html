@@ -17,6 +17,10 @@
         rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
 
+        <!-- aos -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+
     <link rel="stylesheet" href="assets/styles/styles.css">
     <style>
         body {
@@ -194,148 +198,149 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
-            </a>
-            
-            <div class="nav-desktop">
-                <a href="app.html">Download App</a>
-                <a href="about-us.html">About us</a>
-                <a href="contact-us.html">Contact us</a>
-                <a href="#">Blogs</a>
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-                <span></span>
-            </button>
-        </nav>
-        <div class="nav-container" id="navContainer">
-            <div class="nav-items">
-                <a href="app.html">Download App</a>
-                <a href="about-us.html">About us</a>
-                <a href="contact-us.html">Contact us</a>
-                <a href="#">Blogs</a>
-            </div>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
+<header>
+    <nav class="navbar" data-aos="fade-down">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
+        </a>
+
+        <div class="nav-desktop">
+            <a href="app.html">Download App</a>
+            <a href="about-us.html">About us</a>
+            <a href="contact-us.html">Contact us</a>
+            <a href="#">Blogs</a>
         </div>
-    </header>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="nav-container" id="navContainer" data-aos="fade-down">
+        <div class="nav-items">
+            <a href="app.html">Download App</a>
+            <a href="about-us.html">About us</a>
+            <a href="contact-us.html">Contact us</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="social-icons" data-aos="zoom-in">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</header>
+
 
 <!-- main section start -->
     <main>
 
-     <!-- contact section -->
-    <section class="custom-contact-section">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="custom-contact-title">SEND US A <span class="custom-message-highlight">MESSAGE</span>
-                    </h2>
-                    <p class="custom-contact-description">Feel free to drop us a message with any questions or details
-                        about what you're looking for. We’re here to help and look forward to hearing from you!</p>
-                    <form class="custom-contact-form">
-                        <input type="text" name="name" class="form-control" placeholder="Name" required>
-                        <input type="text" name="phone" class="form-control" placeholder="Phone no" required>
-                        <input type="email" name="email" class="form-control" placeholder="Email" required>
-                        <textarea name="message" class="form-control"
-                            placeholder="Please describe what you're looking for" rows="4" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-                <div class="col-lg-6">
-                    <div class="custom-image-section">
-                        <img src="assets\images\Ground.png" alt="Football Field">
-                    </div>
-                </div>
+  <!-- contact section -->
+<section class="custom-contact-section" data-aos="fade-up" data-aos-duration="600">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="600">
+                <h2 class="custom-contact-title">SEND US A <span class="custom-message-highlight">MESSAGE</span></h2>
+                <p class="custom-contact-description">Feel free to drop us a message with any questions or details
+                    about what you're looking for. We’re here to help and look forward to hearing from you!</p>
+                <form class="custom-contact-form">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                    <input type="text" name="phone" class="form-control" placeholder="Phone no" required>
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                    <textarea name="message" class="form-control"
+                        placeholder="Please describe what you're looking for" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
-            <div class="row align-items-start mt-5">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <div class="custom-image-section">
-                        <img src="assets\images\Tennis.png" alt="Tennis Court">
-                    </div>
-                </div>
-                <!-- Contact Details -->
-                <div class="col-lg-6">
-                    <div class="custom-contact-details">
-                        <h3>CONTACT DETAILS</h3>
-                        <ul class="custom-contact-icons">
-                            <!-- Phone -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path
-                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-                                </svg>
-                                <a href="tel:+1234567890">+1234567890</a>
-                            </li>
-                            <!-- Email -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path
-                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                    <polyline points="22,6 12,13 2,6" />
-                                </svg>
-                                <a href="mailto:info@example.com">info@example.com</a>
-                            </li>
-                            <!-- Instagram -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                                </svg>
-                                <a href="#">Instagram</a>
-                            </li>
-                            <!-- WhatsApp -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
-                                </svg>
-                                <a href="#">WhatsApp</a>
-                            </li>
-                            <!-- Facebook -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-                                </svg>
-                                <a href="#">Facebook</a>
-                            </li>
-                            <!-- Twitter -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path
-                                        d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
-                                </svg>
-                                <a href="#">Twitter</a>
-                            </li>
-                            <!-- LinkedIn -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
-                                    <rect x="2" y="9" width="4" height="12" />
-                                    <circle cx="4" cy="4" r="2" />
-                                </svg>
-                                <a href="#">LinkedIn</a>
-                            </li>
-                            <!-- YouTube -->
-                            <li>
-                                <svg class="icon" viewBox="0 0 24 24">
-                                    <path
-                                        d="M22.54 6.42a2.79 2.79 0 00-1.96-2c-1.73-.46-8.58-.46-8.58-.46s-6.85 0-8.58.46a2.79 2.79 0 00-1.96 2A29.94 29.94 0 000 12a29.94 29.94 0 00.46 5.58 2.79 2.79 0 001.96 2c1.73.46 8.58.46 8.58.46s6.85 0 8.58-.46a2.79 2.79 0 001.96-2A29.94 29.94 0 0024 12a29.94 29.94 0 00-.46-5.58zM9.75 15.02V8.98l6.26 3.02-6.26 3.02z" />
-                                </svg>
-                                <a href="#">YouTube</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-duration="600">
+                <div class="custom-image-section">
+                    <img src="assets/images/Ground.png" alt="Football Field">
                 </div>
             </div>
         </div>
+        <div class="row align-items-start mt-5">
+            <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                <div class="custom-image-section">
+                    <img src="assets/images/Tennis.png" alt="Tennis Court">
+                </div>
+            </div>
+            <!-- Contact Details -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                <div class="custom-contact-details">
+                    <h3>CONTACT DETAILS</h3>
+                    <ul class="custom-contact-icons">
+                        <!-- Phone -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+                            </svg>
+                            <a href="tel:+1234567890">+1234567890</a>
+                        </li>
+                        <!-- Email -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <!-- Instagram -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                            </svg>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <!-- WhatsApp -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                            </svg>
+                            <a href="#">WhatsApp</a>
+                        </li>
+                        <!-- Facebook -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <!-- Twitter -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+                            </svg>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <!-- LinkedIn -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            <a href="#">LinkedIn</a>
+                        </li>
+                        <!-- YouTube -->
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M22.54 6.42a2.79 2.79 0 00-1.96-2c-1.73-.46-8.58-.46-8.58-.46s-6.85 0-8.58.46a2.79 2.79 0 00-1.96 2A29.94 29.94 0 000 12a29.94 29.94 0 00.46 5.58 2.79 2.79 0 001.96 2c1.73.46 8.58.46 8.58.46s6.85 0 8.58-.46a2.79 2.79 0 001.96-2A29.94 29.94 0 0024 12a29.94 29.94 0 00-.46-5.58zM9.75 15.02V8.98l6.26 3.02-6.26 3.02z" />
+                            </svg>
+                            <a href="#">YouTube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     </main>
 
@@ -396,6 +401,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> 
+
+     <!-- AOS Script -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Animation Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      padding: 100px 0;
+      text-align: center;
+    }
+    .content-box {
+      width: 80%;
+      margin: 0 auto;
+      background-color: #f4f4f4;
+      padding: 50px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+    
+  <section>
+    <div class="content-box" data-aos="flip-left">
+      <h2>Flip Left Animation</h2>
+      <p>This section will flip when you scroll to it.</p>
+    </div>
+  </section>
+  <section>
+    <div class="content-box" data-aos="fade-up">
+      <h2>Scroll to Animate: Fade Up</h2>
+      <p>This content will animate as you scroll down the page.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="content-box" data-aos="zoom-in">
+      <h2>Zoom In Animation</h2>
+      <p>Watch as this content zooms in when it comes into view.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="content-box" data-aos="flip-left">
+      <h2>Flip Left Animation</h2>
+      <p>This section will flip when you scroll to it.</p>
+    </div>
+  </section>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

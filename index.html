@@ -14,6 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
+<!-- aos -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 <!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,7 +57,7 @@
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .main-container {
-    width: 90%; /* Increase width for mobile */
+    width: 80%; /* Increase width for mobile */
     margin: 10%;
   }
 
@@ -95,7 +98,7 @@
         }
         .vision-box, .who-box {
             width: 100%;
-            background-color: #f9f9f9;
+            background-color: #F5F5F5;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -128,7 +131,7 @@
             position: relative;
             padding: 0 40px;
         }
-        h1 {
+        .testimonials-container >h1 {
             color: #007bff;
             text-align: center;
             font-size: 2.5em;
@@ -227,296 +230,291 @@
      </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="navbar">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
-            </a>
-            
-            <div class="nav-desktop">
-                <a href="app.html">Download App</a>
-                <a href="about-us.html">About us</a>
-                <a href="contact-us.html">Contact us</a>
-                <a href="#">Blogs</a>
+  <!-- Header -->
+<header>
+    <nav class="navbar" data-aos="fade-down">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo.svg" alt="Capriole logo" class="navbar-logo" id="logo">
+        </a>
 
-            </div>
-            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
-                <span></span>
-            </button>
-        </nav>
-        <div class="nav-container" id="navContainer">
-            <div class="nav-items">
-                <a href="app.html">Download App</a>
-                <a href="about-us.html">About us</a>
-                <a href="contact-us.html">Contact us</a>
-                <a href="#">Blogs</a>
-
-            </div>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            </div>
+        <div class="nav-desktop">
+            <a href="app.html">Download App</a>
+            <a href="about-us.html">About us</a>
+            <a href="contact-us.html">Contact us</a>
+            <a href="#">Blogs</a>
         </div>
-    </header>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+            <span></span>
+        </button>
+    </nav>
+
+    <div class="nav-container" id="navContainer" data-aos="fade-down">
+        <div class="nav-items">
+            <a href="app.html">Download App</a>
+            <a href="about-us.html">About us</a>
+            <a href="contact-us.html">Contact us</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="social-icons" data-aos="zoom-in">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</header>
+
 
 <!-- main section start -->
     <main>
 
         
+<!-- Section 1 - Hero -->
+<section class="hero-section" data-aos="fade-up">
+    <div class="hero-content">
+        <h1 class="hero-title" data-aos="zoom-in">
+            <span class="begin-your">BEGIN YOUR</span> <span class="journey">JOURNEY</span>
+        </h1>
+        <div class="hero-card" data-aos="fade-up">
+            <a href="#user-app">
+                <button class="explore-btn">Explore</button>
+            </a>
+        </div>
+    </div>
+</section>
 
-        <!-- Section 1 - Hero  -->
-        <section class="hero-section">
-            <div class="hero-content">
-              <h1 class="hero-title">
-                <span class="begin-your">BEGIN YOUR</span> <span class="journey">JOURNEY</span>
-              </h1>
-              <div class="hero-card">
-                <a href="#user-app">
-                <button class="explore-btn" >Explore</button>
-                </a>
-              </div>
-            </div>
-          </section>
-          <section class="intro-section">
-            <div class="container">
-                <p class="intro-text">
-                    Welcome to Capriole, your ultimate destination for sports enthusiasts seeking convenient solutions for sports venue booking and academy management.
+<!-- Intro Section -->
+<section class="intro-section" data-aos="fade-up">
+    <div class="container">
+        <p class="intro-text" data-aos="fade-in">
+            Welcome to Capriole, your ultimate destination for sports enthusiasts seeking convenient solutions for sports venue booking and academy management.
+        </p>
+
+        <div class="vision-who-section">
+            <div class="vision-box" data-aos="fade-right">
+                <h2>OUR <span>VISION</span></h2>
+                <p>
+                    At Capriole, our vision is to revolutionize the way sports enthusiasts access and manage sports facilities and academies. We aim to become the go-to platform that connects athletes, coaches, and sports enthusiasts with their ideal venues and training programs.
                 </p>
-        
-                <div class="vision-who-section">
-                    <div class="vision-box">
-                        <h2>OUR <span>VISION</span></h2>
+            </div>
 
-                        <p>
-                            At Capriole, our vision is to revolutionize the way sports enthusiasts access and manage sports facilities and academies. We aim to become the go-to platform that connects athletes, coaches, and sports enthusiasts with their ideal venues and training programs.
-                        </p>
-                    </div>
-        
-                    <div class="who-box">
-                        <h2>WHO ARE <span>WE?</span></h2>
-                        <p>
-                            We are a dedicated team of sports enthusiasts, tech-savvy professionals, and industry experts who are passionate about making sports more accessible and enjoyable for everyone. Our collective expertise in sports management, technology, and customer service drives our commitment to delivering exceptional solutions to our users.
-                        </p>
-                    </div>
-                </div>
+            <div class="who-box" data-aos="fade-left">
+                <h2>WHO ARE <span>WE?</span></h2>
+                <p>
+                    We are a dedicated team of sports enthusiasts, tech-savvy professionals, and industry experts who are passionate about making sports more accessible and enjoyable for everyone. Our collective expertise in sports management, technology, and customer service drives our commitment to delivering exceptional solutions to our users.
+                </p>
             </div>
-        </section>
-          <section>
-            <div class="main-container">
-                <div class="text-area">
-                    <h2 class="section-title">WHAT WE <span>DO</span></h2>
-    
-    
-                    <div class="service-feature">
-                        <h2>Easy Venue Booking</h2>
-                        <p>
-                            Are your customers raving about you on social media?
-                            Share their<br>
-                            great stories to help turn potential customers into
-                            loyal ones.
-                        </p>
-                    </div>
-    
-                    <div class="service-feature">
-                        <h2>Academy Management</h2>
-                        <p>
-                            For coaches, academies, and sports organizations, we
-                            offer a
-                            comprehensive academy management system. Our
-                            software simplifies
-                            administrative tasks, streamlines enrollment,
-                            handles payment
-                            processing, and communication. Focus on coaching and
-                            player
-                            development while we handle the rest.
-                        </p>
-                    </div>
-    
-                    <div class="service-feature">
-                        <h2>Community Management</h2>
-                        <p>
-                            We believe that sports are about more than just the
-                            game; they are
-                            about building community. Our platform fosters a
-                            vibrant sports
-                            community where enthusiasts can connect, share
-                            experiences, and
-                            discover new opportunities to grow and excel in
-                            their chosen
-                            sports.
-                        </p>
-                    </div>
-                </div>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section data-aos="fade-up">
+    <div class="main-container">
+        <div class="text-area">
+            <h2 class="section-title" data-aos="zoom-in">WHAT WE <span>DO</span></h2>
+
+            <div class="service-feature" data-aos="fade-right">
+                <h2>Easy Venue Booking</h2>
+                <p>
+                    Are your customers raving about you on social media? Share their<br>
+                    great stories to help turn potential customers into loyal ones.
+                </p>
             </div>
-        </section>
+
+            <div class="service-feature" data-aos="fade-up">
+                <h2>Academy Management</h2>
+                <p>
+                    For coaches, academies, and sports organizations, we offer a
+                    comprehensive academy management system. Our software simplifies
+                    administrative tasks, streamlines enrollment, handles payment
+                    processing, and communication. Focus on coaching and player
+                    development while we handle the rest.
+                </p>
+            </div>
+
+            <div class="service-feature" data-aos="fade-left">
+                <h2>Community Management</h2>
+                <p>
+                    We believe that sports are about more than just the game; they are
+                    about building community. Our platform fosters a vibrant sports
+                    community where enthusiasts can connect, share experiences, and
+                    discover new opportunities to grow and excel in their chosen
+                    sports.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- section 3  -->
-        <section class="about-section">
-       
-            <div class="about-container">
-                
-                <div class="left-content">
-                  <h1>
-                    Get <br>
-                    <span>Playing</span> <br>
-                    With 
-                    <br>
-                    <span>Us</span>
-                  </h1>
-                 
-                  </div>
-                  <div class="image-section">
-                   
-                    <img src="assets/images/GetPlayingwithUsIllustration1.png" alt="Cricket Player">
-                </div>
-            
-                <div class="right-content">
-                  <h2>Capriole</h2>
-                  <p>Capriole, born from a passionate group in a vibrant city, aims to connect sports enthusiasts to their dream playgrounds. Our mission is to make sports accessible to people of all ages and skill levels, empowering them to nurture their passion and unleash their potential.</p>
-                  <h2>The Vision</h2>
-                  <p>Capriole goes beyond being a mobile app; it's a gateway to endless possibilities in the sporting world. We bring convenience, joy, and camaraderie, helping parents find after-school activities and professionals unwind.</p>
-                </div>
-                <div class="stars">
-                  <span class="star">✦</span>
-                  <span class="star">✦</span>
-                  <span class="star">✦</span>
-                </div>
-              </div>
-            
-        </section>
+<section class="about-section" data-aos="fade-up">
+    <div class="about-container">
+        
+        <div class="left-content" data-aos="fade-right">
+            <h1>
+                Get <br>
+                <span>Playing</span> <br>
+                With 
+                <br>
+                <span>Us</span>
+            </h1>
+        </div>
+        
+        <div class="image-section" data-aos="zoom-in">
+            <img src="assets/images/GetPlayingwithUsIllustration1.png" alt="Cricket Player">
+        </div>
+        
+        <div class="right-content" data-aos="fade-left">
+            <h2>Capriole</h2>
+            <p>Capriole, born from a passionate group in a vibrant city, aims to connect sports enthusiasts to their dream playgrounds. Our mission is to make sports accessible to people of all ages and skill levels, empowering them to nurture their passion and unleash their potential.</p>
+            <h2>The Vision</h2>
+            <p>Capriole goes beyond being a mobile app; it's a gateway to endless possibilities in the sporting world. We bring convenience, joy, and camaraderie, helping parents find after-school activities and professionals unwind.</p>
+        </div>
+        
+        <div class="stars" data-aos="bounce">
+            <span class="star">✦</span>
+            <span class="star">✦</span>
+            <span class="star">✦</span>
+        </div>
+    </div>
+</section>
+
 
         <!-- Section 4 -->
          <!-- First App Section (User App) -->
-    <section class="app-section" id="user-app">
-        <div class="app-container">
-            <div class="app-image">
-                <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App">
-            </div>
-            <div class="app-details">
-                <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
-                <p class="app-subtitle">User App</p>
-                <p class="app-description">
-                    Download Our App <br>
-                    and make playing <br>
-                    Easier
-                </p>
-                <div class="store-badges">
-                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
-                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
-                    
+         <section class="app-section" id="user-app" data-aos="fade-up">
+            <div class="app-container">
+                <div class="app-image" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/images/CaprioleIphoneMockup1.png" alt="Capriole User App">
+                </div>
+                <div class="app-details" data-aos="fade-left" data-aos-delay="200">
+                    <h2 class="app-title">Capriole <img src="assets/images/logo1.png" alt="Capriole Logo"></h2>
+                    <p class="app-subtitle">User App</p>
+                    <p class="app-description">
+                        Download Our App <br>
+                        and make playing <br>
+                        Easier
+                    </p>
+                    <div class="store-badges">
+                        <a href="#" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play
+                        </a>
+                        <a href="#" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Second App Section (Admin App) -->
-    <section id="admin-app" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
-" class="app-section">
-        <div style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);
-" class="app-container">
-            <div class="app-details">
-                <h2 style="color: azure;" class="app-title">Capriole <img src="assets/images/Mobileappicon2.png" alt="Capriole Logo"></h2>
-                <p style="color: azure;" class="app-subtitle">Admin App</p>
-                <p style="color: azure;"  class="app-description">
-                    Download Our App <br>
-                    and Connect With <br>
-                    Athletes Easily
-                </p>
-                <div class="store-badges">
-                    <a href="#"><i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play</a>
-                    <a href="#"><i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store</a>
-                    
+        </section>
+        
+        <!-- Second App Section (Admin App) -->
+        <section id="admin-app" class="app-section" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);" data-aos="fade-up">
+            <div class="app-container" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);">
+                <div class="app-details" data-aos="fade-right" data-aos-delay="100">
+                    <h2 style="color: azure;" class="app-title">Capriole <img src="assets/images/Mobileappicon2.png" alt="Capriole Logo"></h2>
+                    <p style="color: azure;" class="app-subtitle">Admin App</p>
+                    <p style="color: azure;" class="app-description">
+                        Download Our App <br>
+                        and Connect With <br>
+                        Athletes Easily
+                    </p>
+                    <div class="store-badges">
+                        <a href="#" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play
+                        </a>
+                        <a href="#" data-aos="fade-up" data-aos-delay="300">
+                            <i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store
+                        </a>
+                    </div>
+                </div>
+                <div class="app-image" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Admin App">
                 </div>
             </div>
-            <div class="app-image">
-                <img src="assets/images/CaprioleIphoneMockup2.png" alt="Capriole Admin App">
-            </div>
-        </div>
-    </section>
+        </section>
+        
         <!-- Section 2 -->
-        <section class="sports-section">
+        <section class="sports-section" data-aos="fade-up">
             <div class="container">
-                <h2 class="section-title">Sports <span>Offered</span></h2>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Sports <span>Offered</span></h2>
                 <div class="clients-section">
                     <div class="logos-row">
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="200">
                             <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
                             <span>Basketball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="300">
                             <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
                             <span>Badminton</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="400">
                             <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
                             <span>Volleyball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="500">
                             <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
                             <span>Karate</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="600">
                             <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
                             <span>Football</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="700">
                             <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
                             <span>Basketball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="800">
                             <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
                             <span>Badminton</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="900"> 
                             <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
                             <span>Volleyball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1000">
                             <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
                             <span>Karate</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1100">
                             <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
                             <span>Football</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1200">
                             <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
                             <span>Basketball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1300">
                             <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
                             <span>Badminton</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1400">
                             <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
                             <span>Volleyball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1500">
                             <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
                             <span>Karate</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1600">
                             <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
                             <span>Football</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1700">
                             <img src="assets/images/sports/SlidingCoroselIllustration4.svg" alt="Basketball">
                             <span>Basketball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1800">
                             <img src="assets/images/sports/SlidingCoroselIllustration2.svg" alt="Badminton">
                             <span>Badminton</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="1900">
                             <img src="assets/images/sports/SlidingCoroselIllustration5.svg" alt="Volleyball">
                             <span>Volleyball</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="2000">
                             <img src="assets/images/sports/SlidingCoroselIllustration1.svg" alt="Karate">
                             <span>Karate</span>
                         </a>
-                        <a href="#" class="logo">
+                        <a href="#" class="logo" data-aos="zoom-in" data-aos-delay="2100"> 
                             <img src="assets/images/sports/SlidingCoroselIllustration3.png" alt="Football">
                             <span>Football</span>
                         </a>
@@ -524,26 +522,26 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials-section">
+        <section class="testimonials-section" data-aos="fade-up">
             <div class="testimonials-container">
-                <h2 class="section-title">WHAT OUR <span>CLIENT SAYS</span></h2>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">WHAT OUR <span>CLIENT SAYS</span></h2>
                 <div class="testimonials-slider">
-                    <div class="testimonial">
+                    <div class="testimonial" data-aos="flip-left" data-aos-delay="200">
                         <h3>Exceptional Service</h3>
                         <p>"Their team went above and beyond to ensure our project was a success. The level of dedication and expertise was truly impressive."</p>
                         <p class="author">- CEO, Technology Company</p>
                     </div>
-                    <div class="testimonial">
+                    <div class="testimonial" data-aos="flip-left" data-aos-delay="300">
                         <h3>Innovative Solutions</h3>
                         <p>"The innovative approach they brought to our challenges has transformed our business processes. We couldn't be happier with the results."</p>
                         <p class="author">- CTO, Innovation Firm</p>
                     </div>
-                    <div class="testimonial">
+                    <div class="testimonial" data-aos="flip-left" data-aos-delay="400">
                         <h3>Reliable Partner</h3>
                         <p>"We've found a reliable partner in this company. Their consistent quality and timely delivery have made them an invaluable asset to our operations."</p>
                         <p class="author">- Operations Director</p>
                     </div>
-                    <div class="testimonial">
+                    <div class="testimonial" data-aos="flip-left" data-aos-delay="500">
                         <h3>Outstanding Results</h3>
                         <p>"The results we've achieved with this company have been outstanding. Their expertise and dedication have significantly improved our performance."</p>
                         <p class="author">- VP of Marketing</p>
@@ -551,45 +549,47 @@
                 </div>
             </div>
         </section>
-        <!-- Section 5 -->
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="form-container">
-                    <h2 class="section-title">SEND US A <span>MESSAGE</span></h2>
-                    <p>"Feel free to drop us a message with any questions or details about what you're looking for. We're here to help and look forward to hearing from you!"</p>
-                    
-                    <form action="#">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Name">
-                        </div>
-    
-                        <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Phone no">
-                        </div>
-    
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email">
-                        </div>
-    
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Please describe what you're looking for"></textarea>
-                        </div>
-    
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+        
+    <!-- Section 5 -->
+<section class="contact-section" data-aos="fade-up">
+    <div class="contact-container">
+        <div class="form-container" data-aos="zoom-in" data-aos-delay="100">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="150">SEND US A <span>MESSAGE</span></h2>
+            <p data-aos="fade-up" data-aos-delay="200">"Feel free to drop us a message with any questions or details about what you're looking for. We're here to help and look forward to hearing from you!"</p>
+            
+            <form action="#" data-aos="fade-up" data-aos-delay="250">
+                <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                    <input type="text" id="name" name="name" placeholder="Name">
                 </div>
-    
-                <div class="image2-container">
-                    <img src="assets/images/SendMsgillustration.png" alt="Illustration" class="illustration">
+
+                <div class="form-group" data-aos="fade-up" data-aos-delay="320">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone no">
                 </div>
-            </div>
-    
-            <div class="logo-container">
-                <img src="assets/images/logo.svg" alt="Capriole Logo" class="logo1">
-                <img src="assets/images/cap.svg" alt="Capriole Logo" class="logo2">
+
+                <div class="form-group" data-aos="fade-up" data-aos-delay="340">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+
+                <div class="form-group" data-aos="fade-up" data-aos-delay="360">
+                    <textarea id="message" name="message" placeholder="Please describe what you're looking for"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" data-aos="bounce" data-aos-delay="380">Send Message</button>
+            </form>
+        </div>
+
+        <div class="image2-container" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/images/SendMsgillustration.png" alt="Illustration" class="illustration">
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <img src="assets/images/logo.svg" alt="Capriole Logo" class="logo1">
+        <img src="assets/images/cap.svg" alt="Capriole Logo" class="logo2">
 </div>
-            </div>
-        </section>
+    </div>
+</section>
+
     </main>
 
     <!-- Footer  -->
@@ -651,6 +651,11 @@
  <!-- testimonial -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>
