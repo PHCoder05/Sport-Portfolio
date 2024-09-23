@@ -246,13 +246,12 @@ html {
 
 
 
-/*Section 1 -  Hero Section */
+/* Section 1 - Hero Section */
 .hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
   padding: 0;
   margin: 0;
   background-color: var(--secondary-color);
@@ -297,13 +296,12 @@ html {
   -webkit-text-stroke: 0;
 }
 
-
 .hero-card {
   width: 100%;
   max-width: 100vw;
   aspect-ratio: 16 / 9;
   border-radius: 25px;
-  background-image: url('../images/FirstPageillustration1.svg'); /* Landscape image for larger screens */
+  background-image: url('../images/FirstPageillustration1.svg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -320,15 +318,13 @@ html {
   background-color: white;
   color: #3498db;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 50px;
   border-radius: 20px;
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding-right: 50px;
-  padding-left: 50px;
 }
 
 .explore-btn:hover {
@@ -337,30 +333,47 @@ html {
 }
 
 /* Mobile adjustments */
-/* Mobile adjustments */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 0;
+    margin: 0;
+    height: 100vh; /* Ensure full viewport height */
+    justify-content: flex-start; /* Align content to the top */
+  }
+
+  .hero-content {
+    padding-top: 20px; /* Add some top padding */
+  }
+
   .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px; /* Add some space below the title */
     font-size: clamp(2.0rem, 4vw, 2.5rem);
   }
-  .hero-section {
-    padding: 0; /* Remove padding from the hero section */
-    margin: 0;
-  }
+
   .hero-card {
-    margin-top: 0; /* Remove top margin */
-    height: 87vh; /* Ensure it fills the viewport height */
-    background-image: url('../images/round_mobile_image.png'); /* Portrait image for mobile view */
+    margin-top: -10%; /* Move the image upward */
+    height: 75vh; /* Adjust height to leave space for the title and button */
+    background-image: url('../images/round_mobile_image.png');
     background-size: contain;
-    background-position: center;
+    background-position: center top; /* Align to the top */
     border-radius: 20px;
-    padding: 0 20px; /* Add padding on the left and right */
-    margin: 20px; /* Uniform margin around the card */
+    padding: 0;
+    margin: 0 20px; /* Horizontal margin */
+  }
+
+  .explore-btn {
+    bottom: 10%; /* Adjust button position */
   }
 }
 
-
+/* Additional adjustment for very tall mobile screens */
+@media (max-width: 768px) and (min-height: 800px) {
+  .hero-card {
+    height: 70vh; /* Slightly reduce height for taller screens */
+    margin-top: -5%; /* Less upward shift for taller screens */
+  }
+}
 
 
 .intro-section {
@@ -1468,6 +1481,7 @@ textarea {
   font-size: 18px;
   vertical-align: middle;
 }
+
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
