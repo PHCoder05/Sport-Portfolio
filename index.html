@@ -4,230 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capriole | Begin Your Journey</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Capriole offers innovative solutions to help you begin your journey towards success. Discover our services, learn more about us, and join our community.">
+    <meta name="keywords" content="Capriole, innovative solutions, success, services, community">
+    <meta name="author" content="Capriole Team">
+    <link rel="canonical" href="https://capriolesportstech.com/"> <!-- Update with your actual URL -->
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Capriole | Begin Your Journey">
+    <meta property="og:description" content="Join Capriole to explore innovative solutions tailored for your success.">
+    <meta property="og:image" content="assets/images/FirstPageillustration1.svg"> <!-- Update with your actual image -->
+    <meta property="og:url" content="https://capriolesportstech.com/"> <!-- Update with your actual URL -->
+    <meta property="og:type" content="website">
+
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- testo -->
+    <!-- Slick Carousel CSS for sliders -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
-    <!-- scroll to top - button -->
+    <!-- Scroll to Top Button Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
-<!-- aos -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <!-- AOS (Animate on Scroll) CSS for animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-<!-- fonts  -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- Favicon for the website -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
-     <link rel="stylesheet" href="assets/styles/styles.css">
-     <style>
-        
-/* Main container with 20% margin */
-.main-container {
-  width: 60%; /* Reduced width since image area is removed */
-  margin: 1px 20%;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
-}
 
-/* Text area styling */
-.text-area {
-  text-align: center;
-}
-
-
-.service-feature>h2 {
-  font-size: 1.5rem;
-  color: #007bff;
-  margin: 10px 0;
-}
-
-.service-feature>p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 50px;
-}
-
-/* Responsive design for mobile */
-@media (max-width: 768px) {
-  .main-container {
-    width: 80%; /* Increase width for mobile */
-    margin: 10%;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .service-feature >h2 {
-    font-size: 1.25rem;
-  }
-
-  .service-feature>p {
-    font-size: 0.9rem;
-  }
-}
-.intro-section {
-            padding: 60px 0;
-            background-color: #ffffff;
-            text-align: center;
-        }
-        .container {
-            width: 90%;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        .intro-text {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-            line-height: 1.6;
-            color: #333;
-        }
-        .vision-who-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            text-align: left;
-            margin-top: 40px;
-        }
-        .vision-box, .who-box {
-            width: 100%;
-            background-color: #F5F5F5;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        .vision-box>h2, .who-box>h2 {
-            font-size: 2rem;
-            color: #007bff;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        .vision-box >h2 span, .who-box >h2 span {
-            font-weight: normal;
-            color: #333;
-        }
-        .vision-box p, .who-box p {
-            font-size: 1rem;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /*  */
-        .testimonials-section {
-            background-color: #f4f4f4;
-            padding: 60px 0;
-        }
-        .testimonials-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            padding: 0 40px;
-        }
-        .testimonials-container >h1 {
-            color: #007bff;
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-        .testimonial {
-            background-color: white;
-            border-radius: 8px;
-            padding: 30px;
-            margin: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            height: auto;
-            min-height: 220px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-        .testimonial:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-        }
-        .testimonial h3 {
-            color: #333;
-            margin-top: 0;
-            font-size: 1.3em;
-            margin-bottom: 15px;
-        }
-        .testimonial p {
-            color: #666;
-            font-size: 1em;
-            line-height: 1.6;
-        }
-        .author {
-            font-weight: bold;
-            text-align: right;
-            color: #007bff;
-            margin-top: 20px;
-        }
-        .slick-arrow {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #007bff;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex !important;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        .slick-arrow:hover {
-            background: #0056b3;
-        }
-        .slick-prev {
-            left: 0;
-        }
-        .slick-next {
-            right: 0;
-        }
-        .slick-arrow:before {
-            content: '';
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 6px;
-        }
-        .slick-prev:before {
-            transform: rotate(135deg);
-            margin-left: 5px;
-        }
-        .slick-next:before {
-            transform: rotate(-45deg);
-            margin-right: 5px;
-        }
-        .slick-dots {
-            bottom: -50px;
-        }
-        .slick-dots li button:before {
-            font-size: 12px;
-            color: #007bff;
-        }
-        @media (min-width: 768px) {
-            .vision-box, .who-box {
-                width: calc(50% - 15px);
-            }
-            .testimonials-container {
-                padding: 0 60px;
-            }
-            .slick-arrow {
-                width: 50px;
-                height: 50px;
-            }
-        }
-     </style>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <style></style>
 </head>
 <body>
   <!-- Header -->
@@ -241,7 +56,7 @@
             <a href="app.html">Download App</a>
             <a href="about-us.html">About us</a>
             <a href="contact-us.html">Contact us</a>
-            <a href="#">Blogs</a>
+            <a href="blogs.html">Blogs</a>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
             <span></span>
@@ -253,7 +68,7 @@
             <a href="app.html">Download App</a>
             <a href="about-us.html">About us</a>
             <a href="contact-us.html">Contact us</a>
-            <a href="#">Blogs</a>
+            <a href="blogs.html">Blogs</a>
         </div>
         <div class="social-icons" data-aos="zoom-in">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -263,12 +78,9 @@
     </div>
 </header>
 
-
 <!-- main section start -->
     <main>
-
-        
-<!-- Section 1 - Hero -->
+<!-- Section 1 - Hero Section -->
 <section class="hero-section" data-aos="fade-up">
     <div class="hero-content">
         <h1 class="hero-title" data-aos="zoom-in">
@@ -282,7 +94,7 @@
     </div>
 </section>
 
-<!-- Intro Section -->
+<!-- section 2 Intro Section -->
 <section class="intro-section" data-aos="fade-up">
     <div class="container">
         <p class="intro-text" data-aos="fade-in">
@@ -306,7 +118,8 @@
         </div>
     </div>
 </section>
-<!-- About Section -->
+
+<!-- section 3- service feature Section -->
 <section data-aos="fade-up">
     <div class="main-container">
         <div class="text-area">
@@ -345,7 +158,7 @@
     </div>
 </section>
 
-<!-- section 3  -->
+<!-- section 4  -->
 <section class="about-section" data-aos="fade-up">
     <div class="about-container">
         
@@ -378,8 +191,7 @@
     </div>
 </section>
 
-
-        <!-- Section 4 -->
+        <!-- Section 5 -->
          <!-- First App Section (User App) -->
          <section class="app-section" id="user-app" data-aos="fade-up">
             <div class="app-container">
@@ -406,6 +218,7 @@
             </div>
         </section>
         
+        <!-- Section 6 -->
         <!-- Second App Section (Admin App) -->
         <section id="admin-app" class="app-section" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);" data-aos="fade-up">
             <div class="app-container" style="background: linear-gradient(180deg, #0C8DE4 0%, #6AC5C9 100%);">
@@ -432,7 +245,7 @@
             </div>
         </section>
         
-        <!-- Section 2 -->
+        <!-- Section 7 -->
         <section class="sports-section" data-aos="fade-up">
             <div class="container">
                 <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Sports <span>Offered</span></h2>
@@ -522,6 +335,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Section 8  -->
         <section class="testimonials-section" data-aos="fade-up">
             <div class="testimonials-container">
                 <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">WHAT OUR <span>CLIENT SAYS</span></h2>
@@ -550,7 +365,7 @@
             </div>
         </section>
         
-    <!-- Section 5 -->
+    <!-- Section 9- contact  -->
 <section class="contact-section" data-aos="fade-up">
     <div class="contact-container">
         <div class="form-container" data-aos="zoom-in" data-aos-delay="100">
@@ -566,11 +381,11 @@
                     <input type="tel" id="phone" name="phone" placeholder="Phone no">
                 </div>
 
-                <div class="form-group" data-aos="fade-up" data-aos-delay="340">
+                <div class="form-group" data-aos="fade-up" data-aos-delay="335">
                     <input type="email" id="email" name="email" placeholder="Email">
                 </div>
 
-                <div class="form-group" data-aos="fade-up" data-aos-delay="360">
+                <div class="form-group" data-aos="fade-up" data-aos-delay="330">
                     <textarea id="message" name="message" placeholder="Please describe what you're looking for"></textarea>
                 </div>
 
@@ -618,7 +433,7 @@
                         <li><a href="about-us.html">About us</a></li>
                         <li><a href="app.html">Download App</a></li>
                         <li><a href="contact-us.html">Contact us</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         <li><a href="pricing-refund-policy.html">Pricing & Refund Policy</a></li>

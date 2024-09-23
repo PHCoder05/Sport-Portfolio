@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Capriole</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+ <!-- SEO Meta Tags -->
+ <meta name="description" content="Learn more about Capriole, our mission, vision, and the team dedicated to helping you succeed.">
+ <meta name="keywords" content="Capriole, About Us, mission, vision, team, innovative solutions">
+ <meta name="author" content="Capriole Team">
+ <link rel="canonical" href="https://capriolesportstech.com/about-us"> <!-- Update with your actual URL -->
 
-    <!-- scroll to top -->
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Capriole | Begin Your Journey">
+    <meta property="og:description" content="Join Capriole to explore innovative solutions tailored for your success.">
+    <meta property="og:image" content="assets/images/FirstPageillustration1.svg"> <!-- Update with your actual image -->
+    <meta property="og:url" content="https://capriolesportstech.com/"> <!-- Update with your actual URL -->
+    <meta property="og:type" content="website">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Slick Carousel CSS for sliders -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <!-- Scroll to Top Button Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- aos -->
+
+    <!-- AOS (Animate on Scroll) CSS for animations -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- Favicon for the website -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
+
+    <!-- Custom Stylesheet for additional styling -->
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <style>
         body {
             font-family: "Poppins", system-ui;
@@ -179,7 +202,7 @@
             }
         }
 
-        .main-container {
+        .about-container {
             display: flex;
             max-width: 1200px;
             margin: 40px auto;
@@ -232,7 +255,7 @@
         }
 
         @media (max-width: 968px) {
-            .main-container {
+            .about-container {
                 flex-direction: column;
                 margin: 20px;
             }
@@ -495,7 +518,7 @@
             <a href="app.html">Download App</a>
             <a href="about-us.html">About us</a>
             <a href="contact-us.html">Contact us</a>
-            <a href="#">Blogs</a>
+            <a href="blogs.html">Blogs</a>
         </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
             <span></span>
@@ -507,7 +530,7 @@
             <a href="app.html">Download App</a>
             <a href="about-us.html">About us</a>
             <a href="contact-us.html">Contact us</a>
-            <a href="#">Blogs</a>
+            <a href="blogs.html">Blogs</a>
         </div>
         <div class="social-icons" data-aos="zoom-in">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
@@ -546,7 +569,7 @@
 
 <!-- section 2-->
 <section>
-    <div class="main-container" data-aos="fade-up">
+    <div class="about-container" data-aos="fade-up">
         <div class="main-image" data-aos="zoom-in" data-aos-duration="1200">
             <div class="main-logo"></div>
         </div>
@@ -570,7 +593,7 @@
 
 <!-- section 3 -->
 <section>
-    <div class="main-container" data-aos="fade-up" data-aos-duration="600">
+    <div class="about-container" data-aos="fade-up" data-aos-duration="600">
         <div class="text-area" data-aos="fade-right" data-aos-duration="800">
             <h2 class="section-title">WHAT WE <span>DO</span></h2>
 
@@ -683,7 +706,7 @@
                         <li><a href="about-us.html">About us</a></li>
                         <li><a href="app.html">Download App</a></li>
                         <li><a href="contact-us.html">Contact us</a></li>
-                        <li><a href="#">Blogs</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
                         <li><a href="pricing-refund-policy.html">Pricing & Refund Policy</a></li>
@@ -699,29 +722,24 @@
             </div>
         </div>
         <div class="footer-bottom text-center">
-            <p>Made with love by <strong>Markyway</strong></p>
+            <p style="color: #ffffff;">Made with love by <strong>Markyway</strong></p>
         </div>
     </footer>
-    
     <button id="scrollTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-none" onclick="scrollToTop()">
         <i class="bi bi-arrow-up"></i>
       </button>
     
-
-    <!-- Scripts -->
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script> 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-
-        <!-- AOS Script -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+     <!-- AOS Script -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
     <script src="assets/scripts/script.js"></script>
 </body>
-
 </html>
