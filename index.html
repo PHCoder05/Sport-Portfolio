@@ -42,7 +42,7 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">  
 
     <link rel="stylesheet" href="assets/styles/styles.css">
-    <style></style>
+   
 </head>
 <body>
   <!-- Header -->
@@ -212,7 +212,7 @@
                         <a href="https://play.google.com/store/apps/details?id=com.capriole.user" data-aos="fade-up" data-aos-delay="300">
                             <i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play
                         </a>
-                        <a href="#" data-aos="fade-up" data-aos-delay="400">
+                        <a href="https://apps.apple.com/in/app/capriole/id6475628075" data-aos="fade-up" data-aos-delay="400">
                             <i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store
                         </a>
                     </div>
@@ -236,7 +236,7 @@
                         <a href="https://play.google.com/store/apps/details?id=com.capriole.admin" data-aos="fade-up" data-aos-delay="200">
                             <i class="fab fa-google-play" style="margin-right: 8px; font-size: 24px;"></i>Google Play
                         </a>
-                        <a href="#" data-aos="fade-up" data-aos-delay="300">
+                        <a href="https://apps.apple.com/us/app/capriole-admin/id6476056966?itsct=apps_box_badge&itscg=30200" data-aos="fade-up" data-aos-delay="300">
                             <i class="fab fa-apple" style="margin-right: 8px; font-size: 24px;"></i>App Store
                         </a>
                     </div>
@@ -374,26 +374,31 @@
             <h2 class="section-title" data-aos="fade-up" data-aos-delay="150">SEND US A <span>MESSAGE</span></h2>
             <p data-aos="fade-up" data-aos-delay="200">"Feel free to drop us a message with any questions or details about what you're looking for. We're here to help and look forward to hearing from you!"</p>
             
-            <form action="#" data-aos="fade-up" data-aos-delay="250">
+            <form id="contactForm" data-aos="fade-up" data-aos-delay="250">
                 <div class="form-group" data-aos="fade-up" data-aos-delay="300">
                     <input type="text" id="name" name="name" placeholder="Name">
+                    <span id="nameError" class="error"></span>
                 </div>
-
+            
                 <div class="form-group" data-aos="fade-up" data-aos-delay="320">
                     <input type="tel" id="phone" name="phone" placeholder="Phone no">
+                    <span id="phoneError" class="error"></span>
                 </div>
-
+            
                 <div class="form-group" data-aos="fade-up" data-aos-delay="335">
                     <input type="email" id="email" name="email" placeholder="Email">
+                    <span id="emailError" class="error"></span>
                 </div>
-
+            
                 <div class="form-group" data-aos="fade-up" data-aos-delay="330">
                     <textarea id="message" name="message" placeholder="Please describe what you're looking for"></textarea>
+                    <span id="messageError" class="error"></span>
                 </div>
-
+            
                 <button type="submit" class="submit-btn" data-aos="bounce" data-aos-delay="380">Send Message</button>
             </form>
-        </div>
+            <div id="messageContainer" class="message"></div>
+            </div>
 
         <div class="image2-container" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/images/SendMsgillustration.png" alt="Illustration" class="illustration">
@@ -453,9 +458,10 @@
             </div>
          
         </div>
-        <div class="footer-bottom text-center">
-            <p>Made with love by <strong>Markyway</strong></p>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Capriole Sports Tech Pvt. Ltd. <br> All Rights Reserved.</p>
         </div>
+        
     </footer>
     <button id="scrollTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3 d-none" onclick="scrollToTop()">
         <i class="bi bi-arrow-up"></i>
@@ -475,6 +481,7 @@
   <script>
     AOS.init();
   </script>
+   
     <script src="assets/scripts/script.js"></script>
 </body>
 </html>

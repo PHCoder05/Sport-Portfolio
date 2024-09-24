@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /assets/images/
+Allow: /assets/scripts/
+Allow: /assets/styles/
+
+Disallow: /process_form.php
+Sitemap: https://capriolesportstech.com/sitemap.xml

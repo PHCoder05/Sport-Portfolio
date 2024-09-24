@@ -26,7 +26,8 @@
 body,
 html {
   font-family: 'Poppins', system-ui;
-  font-weight: 400; /* Regular */
+  font-weight: 400;
+  /* Regular */
   line-height: 1.6;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -48,7 +49,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 10px; /* Adjusted padding for more space */
+  padding: 2px 10px;
+  /* Adjusted padding for more space */
   background-color: var(--secondary-color);
   position: sticky;
   z-index: 1001;
@@ -58,7 +60,8 @@ html {
   height: auto;
   top: 0;
   left: 0;
-  gap: 15px; /* Increased gap between items */
+  gap: 15px;
+  /* Increased gap between items */
   opacity: 1;
   font-size: 21px;
   font-weight: 300;
@@ -145,11 +148,12 @@ html {
   right: -300px;
   width: 300px;
   height: 70%;
-  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  box-shadow: 0 10px 40px 5px rgba(0, 123, 255, 0.2); /* Stronger blue shadow */  backdrop-filter: blur(15px); /* Applies a stronger blur effect */
-  -webkit-backdrop-filter: blur(15px); /* Safari support */
-  border-radius: 10px; /* Optional rounded corners */
-  border: 1px solid rgba(255, 255, 255, 0.18); /* Optional inner border for a glass effect */
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 40px 5px rgba(0, 123, 255, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -199,9 +203,10 @@ html {
 }
 
 .navbar-logo {
-  width: 150px; 
+  width: 150px;
   height: auto;
 }
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .navbar-logo {
@@ -210,17 +215,17 @@ html {
 
   .navbar-brand {
     display: block;
-    background-image: url('../images/logo1.png'); 
+    background-image: url('../images/logo1.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 100px; 
-    height: 50px; 
-    padding: 15px; /* Increased padding for mobile */
+    width: 100px;
+    height: 50px;
+    padding: 15px;
     margin: 5px;
   }
 
   .nav-container {
-    padding: 20px; /* Add padding to nav container for mobile */
+    padding: 20px;
   }
 }
 
@@ -231,16 +236,16 @@ html {
 
   .nav-desktop {
     display: flex;
-    padding: 10px; /* Add padding for desktop view */
+    padding: 10px;
   }
 
   .nav-desktop a {
-    padding: 0 25px; /* Adjust spacing between desktop menu items */
+    padding: 0 25px;
   }
 
   .nav-container {
     display: none;
-    padding: 15px; /* Add padding for the desktop nav container */
+    padding: 15px;
   }
 }
 
@@ -337,61 +342,66 @@ html {
   .hero-section {
     padding: 0;
     margin: 0;
-    height: 100vh; /* Ensure full viewport height */
-    justify-content: flex-start; /* Align content to the top */
+    height: 100vh;
+    justify-content: flex-start;/
   }
 
   .hero-content {
-    padding-top: 20px; /* Add some top padding */
+    padding-top: 20px;
+    /* Add some top padding */
   }
 
   .hero-title {
     margin-top: 0;
-    margin-bottom: 20px; /* Add some space below the title */
+    margin-bottom: 20px;
+    /* Add some space below the title */
     font-size: clamp(2.0rem, 4vw, 2.5rem);
   }
 
   .hero-card {
-    margin-top: -10%; /* Move the image upward */
-    height: 75vh; /* Adjust height to leave space for the title and button */
+    margin-top: -10%;
+    /* Move the image upward */
+    height: 75vh;
     background-image: url('../images/round_mobile_image.png');
     background-size: contain;
-    background-position: center top; /* Align to the top */
+    background-position: center top;
     border-radius: 20px;
     padding: 0;
-    margin: 0 20px; /* Horizontal margin */
+    margin: 0 20px;
   }
 
   .explore-btn {
-    bottom: 10%; /* Adjust button position */
+    bottom: 10%;
   }
 }
 
 /* Additional adjustment for very tall mobile screens */
 @media (max-width: 768px) and (min-height: 800px) {
   .hero-card {
-    height: 70vh; /* Slightly reduce height for taller screens */
-    margin-top: -5%; /* Less upward shift for taller screens */
+    height: 70vh;
+    margin-top: -5%;
   }
 }
 
-
+/* Secttion 2 - Intro */
 .intro-section {
   padding: 60px 0;
   background-color: #ffffff;
   text-align: center;
 }
-.container {
+
+/* .container {
   width: 90%;
   margin: 0 auto;
   max-width: 1200px;
-}
+} */
 .intro-text {
   font-size: 1.2rem;
   margin-bottom: 40px;
   line-height: 1.6;
   color: #333;
 }
+
 .vision-who-section {
   display: flex;
   flex-wrap: wrap;
@@ -399,45 +409,53 @@ html {
   text-align: left;
   margin-top: 40px;
 }
+
 .vision-box, .who-box {
   width: 100%;
   background-color: #F5F5F5;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
+
 .vision-box>h2, .who-box>h2 {
   font-size: 2rem;
   color: #007bff;
   margin-bottom: 20px;
   font-weight: bold;
 }
-.vision-box >h2 span, .who-box >h2 span {
+
+.vision-box>h2 span, .who-box>h2 span {
   font-weight: normal;
   color: #333;
 }
+
 .vision-box p, .who-box p {
   font-size: 1rem;
   color: #666;
   line-height: 1.6;
 }
+
 @media (min-width: 768px) {
   .vision-box, .who-box {
-      width: calc(50% - 15px);
+    width: calc(50% - 15px);
   }
+
   .testimonials-container {
-      padding: 0 60px;
+    padding: 0 60px;
   }
+
   .slick-arrow {
-      width: 50px;
-      height: 50px;
+    width: 50px;
+    height: 50px;
   }
 }
-/* Section 3- About Section */
-       
+
+/* Section 3- Service Section */
+
 .main-container {
-  width: 60%; 
+  width: 60%;
   margin: 1px 20%;
   background-color: #ffffff;
   padding: 20px;
@@ -467,7 +485,8 @@ html {
 /* Responsive design for mobile */
 @media (max-width: 768px) {
   .main-container {
-    width: 80%; /* Increase width for mobile */
+    width: 80%;
+    /* Increase width for mobile */
     margin: 10%;
   }
 
@@ -475,7 +494,7 @@ html {
     font-size: 2rem;
   }
 
-  .service-feature >h2 {
+  .service-feature>h2 {
     font-size: 1.25rem;
   }
 
@@ -484,7 +503,7 @@ html {
   }
 }
 
-/* section 3 - About Section */
+/* section 4 - About Section */
 .about-section {
   background: linear-gradient(to top, #69d1ff, #2a72c5);
   color: white;
@@ -671,7 +690,7 @@ html {
   }
 }
 
-/* section 4 - app section  */
+/* section 5 - app section  */
 .app-section {
   display: flex;
   flex-direction: column;
@@ -688,7 +707,7 @@ html {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  
+
 }
 
 .app-image img {
@@ -772,86 +791,94 @@ html {
 /* Responsive styling */
 @media (max-width: 1200px) {
   .app-container {
-      width: 90vw;
-      padding: 30px;
+    width: 90vw;
+    padding: 30px;
   }
 
   .app-image img {
-      max-width: 250px;
-      margin-right: 40px;
-      margin-left: 40px;
+    max-width: 250px;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .app-details {
-      margin-left: 60px;
-      margin-right: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .app-title, .app-subtitle {
-      font-size: 40px;
+    font-size: 40px;
   }
 }
+
 @media (max-width: 992px) {
   .app-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
+
   .app-image img {
     margin: 30px 0 0 0;
   }
+
   .app-details {
     margin: 0;
     max-width: 100%;
-    order: -1; /* This moves the text above the image */
+    order: -1;
+    /* This moves the text above the image */
   }
+
   .app-title {
     justify-content: center;
   }
+
   .store-badges {
     flex-direction: row;
     justify-content: center;
   }
+
   .store-badges a {
     margin: 0 10px;
   }
 }
+
 @media (max-width: 768px) {
   .app-container {
-      width: 95vw;
-      padding: 20px;
+    width: 95vw;
+    padding: 20px;
   }
 
   .app-title, .app-subtitle {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .app-description {
-      font-size: 16px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 576px) {
   .app-title, .app-subtitle {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .app-image img {
-      max-width: 200px;
+    max-width: 200px;
   }
 
   .store-badges {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .store-badges a {
-      margin: 10px 0;
-      width: 100%;
+    margin: 10px 0;
+    width: 100%;
   }
 }
 
 
-/* Section 2 - Sports Offered Section */
+/* Section 6 - Sports Offered Section */
 .sports-section {
   padding: var(--spacing-large) 0;
   background-color: var(--secondary-color);
@@ -895,10 +922,11 @@ html {
 
 .logo {
   flex: 0 0 auto;
-  width: calc(12% - 8px); /* Adjusted for 7 logos per row */
+  width: calc(12% - 8px);
+  /* Adjusted for 7 logos per row */
   aspect-ratio: 1 / 1;
-  margin: 0 8px; /* Reduced margin */
-  padding: 4px; /* Reduced padding */
+  margin: 0 8px;
+  padding: 4px;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
@@ -952,164 +980,196 @@ html {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-100%);
   }
 }
 
-/* Ensure there are enough logos for continuous scrolling */
 .logos-row {
-  width: 300%; /* Triple the width to ensure all logos are visible */
+  width: 300%;
 }
 
 .logos-row .logo {
-  flex-shrink: 0; /* Prevent logos from shrinking */
+  flex-shrink: 0;
+  /* Prevent logos from shrinking */
 }
 
 @media (max-width: 1200px) {
   .logos-row {
-    animation-duration: 30s; /* Keep laptop speed consistent */
+    animation-duration: 30s;
+    /* Keep laptop speed consistent */
   }
 }
 
 @media (max-width: 992px) {
   .logos-row {
-    animation-duration: 25s; /* Faster for tablets */
+    animation-duration: 25s;
+    /* Faster for tablets */
   }
 }
 
 @media (max-width: 768px) {
   .logos-row {
-    animation-duration: 20s; /* Even faster for small tablets/phones */
+    animation-duration: 20s;
   }
 }
+
 @media (max-width: 576px) {
-  /* Increase logo size in mobile view */
+
   .logo {
-    width: calc(25% - 8px); /* Increase the logo width to 25% per logo */
+    width: calc(25% - 8px);
     aspect-ratio: 1 / 1;
-    margin: 0 4px; /* Reduce margin slightly to maintain spacing */
+    margin: 0 4px;
   }
 
   /* Adjust animation duration for mobile speed */
   .logos-row {
-    animation-duration: 15s; /* Fastest for mobile */
+    animation-duration: 15s;
   }
 
   .logo img {
-    width: 80%; /* Increase image size inside the logo */
+    width: 80%;
     height: 80%;
   }
 
   .logo span {
-    font-size: clamp(1rem, 2.5vw, 1.2rem); /* Slightly increase text size */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
   }
 }
 
+/* Section 7 - Testimonial  */
+/*WHAT OUR CLIENT SAYS  */
+.testimonials-section {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
 
-        /*WHAT OUR CLIENT SAYS  */
-        .testimonials-section {
-          background-color: #f4f4f4;
-          padding: 60px 0;
-      }
-      .testimonials-container {
-          max-width: 1200px;
-          margin: 0 auto;
-          position: relative;
-          padding: 0 40px;
-      }
-      .testimonials-container >h1 {
-          color: #007bff;
-          text-align: center;
-          font-size: 2.5em;
-          margin-bottom: 40px;
-      }
-      .testimonial {
-          background-color: white;
-          border-radius: 8px;
-          padding: 30px;
-          margin: 15px;
-          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-          height: auto;
-          min-height: 220px;
-          overflow: hidden;
-          transition: all 0.3s ease;
-      }
-      .testimonial:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-      }
-      .testimonial h3 {
-          color: #333;
-          margin-top: 0;
-          font-size: 1.3em;
-          margin-bottom: 15px;
-      }
-      .testimonial p {
-          color: #666;
-          font-size: 1em;
-          line-height: 1.6;
-      }
-      .author {
-          font-weight: bold;
-          text-align: right;
-          color: #007bff;
-          margin-top: 20px;
-      }
-      .slick-arrow {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background: #007bff;
-          border-radius: 50%;
-          width: 40px;
-          height: 40px;
-          display: flex !important;
-          align-items: center;
-          justify-content: center;
-          z-index: 1;
-          cursor: pointer;
-          transition: all 0.3s ease;
-      }
-      .slick-arrow:hover {
-          background: #0056b3;
-      }
-      .slick-prev {
-          left: 0;
-      }
-      .slick-next {
-          right: 0;
-      }
-      .slick-arrow:before {
-          content: '';
-          border: solid white;
-          border-width: 0 3px 3px 0;
-          display: inline-block;
-          padding: 6px;
-      }
-      .slick-prev:before {
-          transform: rotate(135deg);
-          margin-left: 5px;
-      }
-      .slick-next:before {
-          transform: rotate(-45deg);
-          margin-right: 5px;
-      }
-      .slick-dots {
-          bottom: -50px;
-      }
-      .slick-dots li button:before {
-          font-size: 12px;
-          color: #007bff;
-      }
-     
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 40px;
+}
 
-/* section 5 - Contact Section */
+.testimonials-container>h1 {
+  color: #007bff;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  min-height: 220px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+  color: #007bff;
+  margin-top: 20px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #007bff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slick-arrow:hover {
+  background: #0056b3;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-arrow:before {
+  content: '';
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+}
+
+.slick-prev:before {
+  transform: rotate(135deg);
+  margin-left: 5px;
+}
+
+.slick-next:before {
+  transform: rotate(-45deg);
+  margin-right: 5px;
+}
+
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff;
+}
+
+
+/* section 8 - Contact Section */
 .contact-section {
   padding: 50px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-section>a {
+  color: #4a5568;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.contact-section>a:hover {
+  color: #3182ce;
 }
 
 .contact-container {
@@ -1130,16 +1190,16 @@ html {
   margin-right: 20px;
 }
 
-.form-container > h1 {
+.form-container>h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
 }
 
-.form-container > h1 .highlight {
+.form-container>h1 .highlight {
   color: #69d1ff;
 }
 
-.form-container > p {
+.form-container>p {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -1158,32 +1218,31 @@ html {
   font-size: 1rem;
 }
 
-/* Placeholder styling */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #a9a9a9; /* Lighter gray to ensure visibility */
-  opacity: 1; /* Make sure it's fully visible */
+  color: #a9a9a9;
+  opacity: 1;
 }
 
 textarea {
   height: 100px;
   resize: none;
-  color: #000; /* Ensure the text color is black for contrast */
+  color: #000;
 }
 
-
 .submit-btn {
-  background-color: #69d1ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .submit-btn:hover {
-  background-color: #2a72c5;
+  background-color: #0056b3;
 }
 
 .image2-container {
@@ -1232,41 +1291,91 @@ textarea {
     max-width: 100%;
   }
 }
-/* Logo Section  */
+
+.message {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+.message.visible {
+  top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.message i {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.success {
+  background-color: #d4edda;
+  color: #155724;
+  border-left: 5px solid #28a745;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  /* border-left: 5px solid #dc3545; */
+}
+
+.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border-left: 5px solid #ffc107;
+}
+
+
+/* Section 9 - Logo Section  */
 .logo-container {
-  position: relative; 
-  width: 100%; 
+  position: relative;
+  width: 100%;
   height: 200px;
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
-  padding: 0 20px; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 
 .logo1 {
-  max-width: 100%; 
-  height: auto; 
+  max-width: 100%;
+  height: auto;
 }
 
 .logo2 {
   position: absolute;
-  right: 35rem; 
+  right: 35rem;
   top: 50%;
   transform: translateY(-50%);
-  width: 150%; 
-  height: auto; 
-  z-index: 1; 
+  width: 150%;
+  height: auto;
+  z-index: 1;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .logo-container {
-    height: 150px; 
+    height: 150px;
   }
 
   .logo2 {
-    right: 20rem; 
+    right: 20rem;
     width: 120%;
   }
 }
@@ -1274,24 +1383,24 @@ textarea {
 @media (max-width: 768px) {
   .logo-container {
     height: 120px;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .logo1 {
-    max-width: 80%; 
+    max-width: 80%;
   }
 
   .logo2 {
     position: static;
-    margin-top: 100px; 
-    width: 100%; 
+    margin-top: 100px;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .logo-container {
-    height: auto; 
+    height: auto;
     padding: 10px;
   }
 
@@ -1300,7 +1409,7 @@ textarea {
   }
 
   .logo2 {
-    width: 80%; 
+    width: 80%;
   }
 }
 
@@ -1349,17 +1458,9 @@ textarea {
     max-width: 200px;
   }
 }
-/* .section {
-  padding: 40px 0;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-} */
 
 
+/* Footer */
 .footer {
   background-color: #00a0e3;
   color: white;
@@ -1386,11 +1487,11 @@ textarea {
   max-width: 180px;
   height: auto;
   margin-bottom: 20px;
-  transition: transform 0.3s ease; /* Smooth hover effect */
+  transition: transform 0.3s ease;
 }
 
 .footer-logo:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 .footer h2 {
@@ -1429,7 +1530,7 @@ textarea {
 
 .footer a:hover {
   opacity: 0.8;
-  color: white; /* Ensure the color stays consistent on hover */
+  color: white;
 }
 
 .social-icons {
@@ -1439,12 +1540,12 @@ textarea {
 
 .social-icons a {
   font-size: 24px;
-  color: white; /* Set default color for icons */
+  color: white;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #d236a1; /* Add hover color to icons */
+  color: #d236a1;
 }
 
 .dotted-image {
@@ -1453,48 +1554,15 @@ textarea {
   margin: 20px 0;
 }
 
-.footer .footer-bottom {
-  padding: 10px 0;
-  margin-top: 20px;
-  color: #faf4f4;
+.footer-bottom {
+  /* background-color: #333; Dark background for contrast */
+  color: #fff;
+  padding: 20px;
   font-size: 14px;
-  letter-spacing: 1.2px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  text-align: center;
+  position: relative;
 }
 
-.footer .footer-bottom p {
+.footer-bottom p {
   margin: 0;
-}
-
-.footer .footer-bottom p strong {
-  color: #d236a1; /* Highlight Markyway with vibrant color */
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.footer .footer-bottom p:after {
-  content: " ❤"; /* Adds heart for an attractive touch */
-  color: red;
-  margin-left: 5px;
-  font-size: 18px;
-  vertical-align: middle;
-}
-
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-
-  .footer-column {
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .social-icons {
-    justify-content: center; /* Center social icons on smaller screens */
-  }
 }
