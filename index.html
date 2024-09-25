@@ -376,30 +376,29 @@
             
             <form id="contactForm" data-aos="fade-up" data-aos-delay="250">
                 <div class="form-group" data-aos="fade-up" data-aos-delay="300">
-                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                     <span id="nameError" class="error"></span>
                 </div>
             
                 <div class="form-group" data-aos="fade-up" data-aos-delay="320">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone no">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone no" required>
                     <span id="phoneError" class="error"></span>
                 </div>
             
                 <div class="form-group" data-aos="fade-up" data-aos-delay="335">
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
                     <span id="emailError" class="error"></span>
                 </div>
             
                 <div class="form-group" data-aos="fade-up" data-aos-delay="330">
-                    <textarea id="message" name="message" placeholder="Please describe what you're looking for"></textarea>
+                    <textarea id="message" name="message" placeholder="Please describe what you're looking for" required></textarea>
                     <span id="messageError" class="error"></span>
                 </div>
             
                 <button type="submit" class="submit-btn" data-aos="bounce" data-aos-delay="380">Send Message</button>
             </form>
             <div id="messageContainer" class="message"></div>
-            </div>
-
+        </div>
         <div class="image2-container" data-aos="fade-left" data-aos-delay="100">
             <img src="assets/images/SendMsgillustration.png" alt="Illustration" class="illustration">
         </div>
@@ -430,8 +429,8 @@
                 <div class="col-md-4">
                     <h2>APP DOWNLOAD</h2>
                     <ul>
-                        <li><a href="#user-app">User App Download</a></li>
-                        <li><a href="#admin-app">Admin App Download</a></li>
+                        <li><a href="./index.html#user-app">User App Download</a></li>
+                        <li><a href="./index.html#admin-app">Admin App Download</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -453,13 +452,15 @@
                         " aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://www.instagram.com/capriole_sports?igsh=MTR6NGIwbXJtNmtzMA==
                         " aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@capriolesports?si=qYuIm9nnEgz0QNF2
+                        " aria-label="Youtube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
             </div>
          
         </div>
         <div class="footer-bottom">
-            <p>© <span id="current-year"></span> Capriole Sports Tech Pvt. Ltd. <br> All Rights Reserved.</p>
+            <p>© 2024<span id="current-year"></span> Capriole Sports Tech Pvt. Ltd. <br> All Rights Reserved.</p>
         </div>
         
     </footer>
@@ -480,6 +481,7 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+    
   </script>
    
     <script src="assets/scripts/script.js"></script>

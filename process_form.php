@@ -31,12 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'description' => $message
     );
 
-    $ch = curl_init('https://api.capriolesportstech.com/api/contactus');
+    $ch = curl_init('https://fbcla1abwk.execute-api.ap-south-1.amazonaws.com/prod/api/contactus');
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_POST, true);
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
     curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
 
+    // Ensure SSL verification
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true);
+    
     $response = curl_exec($ch);
     $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
