@@ -1,14 +1,5 @@
 ErrorDocument 404 /404.html
 
-<Files "process_form.php">
-    Order Allow,Deny
-    Deny from all
-</Files>
-
-# Allow POST requests
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} !POST
-RewriteRule ^process_form\.php - [F,L]
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f

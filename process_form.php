@@ -52,6 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo json_encode(["success" => false, "message" => "Failed to send message. HTTP Code: $http_code. Response: $response"]);
     }
 
+    // added test
+    var_dump($response);
+
     curl_close($ch);
 } else {
     echo json_encode(["success" => false, "message" => "Invalid request method"]);
